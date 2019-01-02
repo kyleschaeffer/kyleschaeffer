@@ -5,13 +5,13 @@ date: 2008-11-06T15:04:34+00:00
 author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=104
-permalink: /uncategorized/the-shepherd/
+permalink: /the-shepherd
 categories:
   - Uncategorized
 tags:
   - Writing
 ---
-Ian had been looking forward to coming in to town on this early Friday morning. Now, hustling down the paved walkway of Midland Avenue, he wondered why he looked forward to such errands. If there was one thing he didn’t like, it was forcing a false bond with people he didn’t know, and frankly didn’t care about. He was polite and respectful of other people, but when it came to shallow conversations about the world, he simply wasn’t interested. It was an arduous task in such a small community to avoid these conversations, when everyone seemed to want to know his name and what he “did” for a living. _What does anyone do for a living?_<!--more-->
+Ian had been looking forward to coming in to town on this early Friday morning. Now, hustling down the paved walkway of Midland Avenue, he wondered why he looked forward to such errands. If there was one thing he didn’t like, it was forcing a false bond with people he didn’t know, and frankly didn’t care about. He was polite and respectful of other people, but when it came to shallow conversations about the world, he simply wasn’t interested. It was an arduous task in such a small community to avoid these conversations, when everyone seemed to want to know his name and what he “did” for a living. _What does anyone do for a living?_
 
 _A good question._ His mind started to race down a familiar path, but he was helpless to stop it. In all his years, he was unable to avoid visiting the same thoughts time and again, searching for an answer or a conclusion that always seemed to elude him. He had a sort of optimistic-cynical opinion of the world, if that was at all possible. He had always thought that the world was a terrible place with great potential for good, but there was always something or someone keeping it from becoming what it should always have been.
 

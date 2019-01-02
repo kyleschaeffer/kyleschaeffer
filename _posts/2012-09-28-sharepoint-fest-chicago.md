@@ -5,7 +5,7 @@ date: 2012-09-28T10:45:22+00:00
 author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=1135
-permalink: /events/sharepoint-fest-chicago/
+permalink: /sharepoint-fest-chicago
 categories:
   - Events
   - Mobile
@@ -13,6 +13,6 @@ categories:
 tags:
   - SharePoint
 ---
-This week at [SharePoint Fest](http://www.sharepointfest.com/portal/) Chicago, I was honored to be speaking alongside the likes of [Marc Anderson](http://sympmarc.com/) and many other talented and intelligent thought leaders in the SharePoint community.<!--more--> My slides and resources from my sessions are posted below for anyone who attended, or for anyone who might be interested in the topic of SharePoint design.
+This week at [SharePoint Fest](http://www.sharepointfest.com/portal/) Chicago, I was honored to be speaking alongside the likes of [Marc Anderson](http://sympmarc.com/) and many other talented and intelligent thought leaders in the SharePoint community. My slides and resources from my sessions are posted below for anyone who attended, or for anyone who might be interested in the topic of SharePoint design.
 
-  * [SharePoint Design Essentials](https://kyleschaeffer.com/wp-content/uploads/2012/09/SharePoint-Design-Essentials.pdf) (PDF, 3.0 MB)
+* [SharePoint Design Essentials](/assets/downloads/SharePoint-Design-Essentials.pdf) (PDF, 3.0 MB)

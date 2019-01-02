@@ -1,97 +1,102 @@
 ---
 id: 1555
-title: 'Making &lt;canvas&gt; Games'
+title: 'Making <canvas> Games'
 date: 2014-05-06T16:03:08+00:00
 author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=1555
-permalink: /development/making-canvas-games/
+permalink: /making-canvas-games
 categories:
   - Development
 tags:
   - JavaScript
 ---
-In my last post, [Making <canvas> Art](/development/making-canvas-art/), I introduced the idea of using the HTML5 `<canvas>` API to create a randomly-generated &#8220;northern lights&#8221; animation. The effect of the resulting animation is entirely aesthetic in nature. It provides no interactivity beyond the generation of new colors and shapes. In this follow-up post, we&#8217;ll use the same technique introduced in the original post, but extend our example to introduce keyboard input and manipulation in order to create a fully interactive game.<!--more-->
+In my last post, [Making \<canvas\> Art](/making-canvas-art), I introduced the idea of using the HTML5 `<canvas>` API to create a randomly-generated “northern lights” animation. The effect of the resulting animation is entirely aesthetic in nature. It provides no interactivity beyond the generation of new colors and shapes. In this follow-up post, we’ll use the same technique introduced in the original post, but extend our example to introduce keyboard input and manipulation in order to create a fully interactive game.
 
-We&#8217;ll be creating a game I&#8217;m calling _Space_. It&#8217;s a simple game in which you use the keyboard to navigate a two-dimensional map of stars and planets. For the sake of brevity, the full script will be made available at the bottom of this post, and I&#8217;ll use snippets from the script to explain what&#8217;s what.
+We’ll be creating a game I’m calling _Space_. It’s a simple game in which you use the keyboard to navigate a two-dimensional map of stars and planets. For the sake of brevity, the full script will be made available at the bottom of this post, and I’ll use snippets from the script to explain what’s what.
 
-### The game &#8220;loop&#8221;
+### The game “loop”
 
-The most important element of game development is the game &#8220;loop.&#8221; This is essentially a function that will continuously repeat as long as the game is being played. Our game loop will run much like our animation loop that we used in the previous post, with a few key additions. Without getting into too much detail, game loop script will look something like this:
+The most important element of game development is the game “loop.” This is essentially a function that will continuously repeat as long as the game is being played. Our game loop will run much like our animation loop that we used in the previous post, with a few key additions. Without getting into too much detail, game loop script will look something like this:
 
-<pre>&lt;canvas id="space" width="400" height="300"&gt;&lt;/canvas&gt;</pre>
+{% highlight html %}
+<canvas id="space" width="400" height="300"></canvas>
+{% endhighlight %}
 
-<pre>// game
+{% highlight js %}
+// game
 function game(){
-  
+
   // configuration
   var game = this;
   game.canvas = document.getElementById('space');
   game.ctx = game.canvas.getContext('2d');
   game.time = false;
-  
+
   // initialize
   game.init = function(){
-    
+
     // start the game loop
     game.loop();
-    
+
   };
-  
+
   // game loop
   game.loop = function(){
-    
+
     // timing
     var now = new Date().getTime();
     var d = now - (game.time || now);
     game.time = now;
-    
+
     // update positions, view, etc.
     game.update(d);
-    
+
     // render
     game.render(d);
-    
+
     // request next frame
     requestAnimationFrame(game.loop);
-    
+
   };
-  
+
   // update game
   game.update = function(d){
-    
+
     // 1. update player position
     // 2. update view
-    
+
   };
-  
+
   // render game
   game.render = function(d){
-    
+
     // 1. clear the canvas
     // 2. draw background
     // 3. draw stars, planets
     // 4. draw player
-    
+
   };
-  
+
 }
 
 // begin game
 var space = new game();
-space.init();</pre>
+space.init();
+{% endhighlight %}
 
-With this basic structure in place, we&#8217;ll start to add more specific features to our script to handle movement, animation, and player interaction.
+With this basic structure in place, we’ll start to add more specific features to our script to handle movement, animation, and player interaction.
 
 ### The game view
 
 The first challenge is creating a scrollable map on which players can move. Our map will contain objects like planets and stars, but not every star will be visible at any given time. Only those stars that are close to the player will be drawn on the canvas. This is made possible by creating a **game view**. Because this is a two-dimensional game, we can consider the game view according to `x` and `y` axes. It looks something like this:
 
-[<img class="alignnone size-full wp-image-1563" src="/wp-content/uploads/2014/05/game-view.png" alt="game-view" srcset="https://kyleschaeffer.com/wp-content/uploads/2014/05/game-view.png 720w, https://kyleschaeffer.com/wp-content/uploads/2014/05/game-view-300x167.png 300w" sizes="(max-width: 720px) 100vw, 720px" />](/wp-content/uploads/2014/05/game-view.png)
+![game-view](/assets/img/game-view.png)
 
 As you can see, stars 1 and 2 are visible within the game view, but star 3 is not. As the player moves around the map on the `x` and `y` axes, the view will be updated to show new map content, based on the location of the player. In our script, we can create the game view with the following additions to our `game()` function.
 
-<pre>// configuration
+{% highlight js %}
+// configuration
 game.width = 0;
 game.height = 0;
 game.view = { x: 0, y: 0 };
@@ -103,15 +108,16 @@ game.resize = function(){
   game.width = game.canvas.width;
   game.height = game.canvas.width;
 };
-</pre>
+{% endhighlight %}
 
-Using a combination of `game.width`, `game.height`, `game.view.x`, and `game.view.y`, we can keep track of our view and always draw the correct objects within the game canvas. As we add movement and objects to our map, we&#8217;ll refer back to our game view every time an object is rendered.
+Using a combination of `game.width`, `game.height`, `game.view.x`, and `game.view.y`, we can keep track of our view and always draw the correct objects within the game canvas. As we add movement and objects to our map, we’ll refer back to our game view every time an object is rendered.
 
 ### Stars, planets, and ships, oh my
 
-With a basic animation and view structure in place, it&#8217;s time to populate our game world with the stars, planets, and ships that will make up the final game. It&#8217;s best to create a generic _entity_ object that we can use to place all objects in our map. Our entities will store information for each map object, including its position (`x` and `y`), size (`width` and `height`), orientation, and movement vector.
+With a basic animation and view structure in place, it’s time to populate our game world with the stars, planets, and ships that will make up the final game. It’s best to create a generic _entity_ object that we can use to place all objects in our map. Our entities will store information for each map object, including its position (`x` and `y`), size (`width` and `height`), orientation, and movement vector.
 
-<pre>// translate coordinates
+{% highlight js %}
+// translate coordinates
 game.translate = function(x, y){
   return {
     x: (game.width / 2) - game.view.x + x,
@@ -121,7 +127,7 @@ game.translate = function(x, y){
 
 // entity
 game.entity = function(options){
-  
+
   // settings
   var entity = this;
   entity.settings = {
@@ -136,49 +142,49 @@ game.entity = function(options){
     color: { red: 0, green: 0, blue: 0, alpha: 0 }
   };
   entity.settings = merge(entity.settings, options);
-  
+
   // update
   entity.update = function(d){
-    
+
     // update position
     entity.settings.x += (entity.settings.v.x / 10) * d;
     entity.settings.y += (entity.settings.v.y / 10) * d;
-    
+
     // friction
     entity.settings.v.x -= entity.settings.v.x * entity.settings.f * d;
     entity.settings.v.y -= entity.settings.v.y * entity.settings.f * d;
-    
+
   };
-  
+
   // draw
   entity.draw = function(d){
-    
+
     // only draw when in view
-    if(entity.settings.x - (entity.settings.w / 2) &lt;= game.view.x + (game.width / 2) && entity.settings.x + (entity.settings.w / 2) &gt;= game.view.x - (game.width / 2) && entity.settings.y - (entity.settings.h / 2) &lt;= game.view.y + (game.height / 2) && entity.settings.y + (entity.settings.h / 2) &gt;= game.view.y - (game.height / 2)){
-      
+    if(entity.settings.x - (entity.settings.w / 2) <= game.view.x + (game.width / 2) && entity.settings.x + (entity.settings.w / 2) >= game.view.x - (game.width / 2) && entity.settings.y - (entity.settings.h / 2) <= game.view.y + (game.height / 2) && entity.settings.y + (entity.settings.h / 2) >= game.view.y - (game.height / 2)){
+
       // get translated coordinates
       var t = game.translate(entity.settings.x, entity.settings.y);
-      
+
       // orientation
       game.ctx.save();
       game.ctx.translate(t.x, t.y);
       game.ctx.rotate(entity.settings.o * Math.PI / 180);
-      
+
       // color
       game.ctx.fillStyle = 'rgba(' + entity.settings.color.red + ', ' + entity.settings.color.green + ', ' + entity.settings.color.blue + ', ' + entity.settings.color.alpha + ')';
-      
+
       // draw entity
       game.ctx.beginPath();
       game.ctx.rect(0 - (entity.settings.w / 2), 0 - (entity.settings.h / 2), entity.settings.w, entity.settings.h);
       game.ctx.fill();
-      
+
       // reset orientation
       game.ctx.restore();
-      
+
     }
-      
+
   };
-    
+
 };
 
 // create player
@@ -195,24 +201,26 @@ var star = new space.entity({
   y: Math.floor(Math.random()*5000)*(Math.round(Math.random())*2-1),
   w: 5,
   h: 5
-});</pre>
+});
+{% endhighlight %}
 
-The `entity` object will store all information we&#8217;ll need to draw objects on the game map. Entities will support position, orientation, and even movement using the `v` (vector) property. I&#8217;ve also included a `friction` property that will slowly reduce the movement vector over time, so that when players move around the map they don&#8217;t float away indefinitely.
+The `entity` object will store all information we’ll need to draw objects on the game map. Entities will support position, orientation, and even movement using the `v` (vector) property. I’ve also included a `friction` property that will slowly reduce the movement vector over time, so that when players move around the map they don’t float away indefinitely.
 
-To draw game entities in the correct position, we&#8217;re using a `translate()` function to convert our map-relative `x` and `y` coordinates into view-relative coordinates. Using this in conjunction with an `if` statement that checks to see if the entity is currently &#8220;in view,&#8221; we can draw our game objects only when they appear near the player.
+To draw game entities in the correct position, we’re using a `translate()` function to convert our map-relative `x` and `y` coordinates into view-relative coordinates. Using this in conjunction with an `if` statement that checks to see if the entity is currently “in view,” we can draw our game objects only when they appear near the player.
 
 ### Images and animation
 
 Currently, our game entities can be rendered only as simple rectangles on our game map. Instead of rectangles, we want to use images and even animations to bring our game content to life. We can add this support to our game entities using **animation sprites**, a common technique used in game development. Our game objects will be rendered using images such as the following image of our player ship.
 
-[<img class="alignnone size-full wp-image-1571" src="/wp-content/uploads/2014/05/ship.png" alt="ship" />](/wp-content/uploads/2014/05/ship.png)
+![ship](/assets/img/ship.png)
 
 This single image contains _frames_ that make up the different states of our object. From left to right, the first frame is the _static_ state of our ship, followed by two _forward thrust_ frames, followed by two _reverse thrust_ frames, and finally followed by two _turbo_ frames. We can improve our script by adding support for these sprite animations.
 
-<pre>// load images
+{% highlight js %}
+// load images
 game.resources = [];
 game.load = function(images){
-  
+
   // load image from url
   var loadFromUrl = function(url){
     var img = new Image();
@@ -222,22 +230,22 @@ game.load = function(images){
       game.resources[url].loaded = true;
     };
   };
-  
+
   // accept array or single resource
   if(images instanceof Array){
-    for(var i = 0; i &lt; images.length; i++){
+    for(var i = 0; i < images.length; i++){
       loadFromUrl(images[i]);
     }
   }
   else{
     loadFromUrl(images);
   }
-  
+
 };
 
 // sprites
 game.sprite = function(options){
-  
+
   // settings
   var sprite = this;
   sprite.settings = {
@@ -254,26 +262,26 @@ game.sprite = function(options){
     loop: true
   };
   sprite.settings = merge(sprite.settings, options);
-  
+
   // update
   sprite.update = function(d){
     sprite.settings.index += sprite.settings.speed * d;
   };
-  
+
   // draw
   sprite.draw = function(x, y, w, h){
-     
+
     // determine which frame to draw
     var frame = 0;
-    if(sprite.settings.speed &gt; 0){
+    if(sprite.settings.speed > 0){
       var max = sprite.settings.frames.length;
       var idx = Math.floor(sprite.settings.index);
       frame = sprite.settings.frames[idx % max];
-      if(!sprite.settings.loop && idx &gt; max){
+      if(!sprite.settings.loop && idx > max){
         var frame = sprite.settings.frames[sprite.settings.frames.length - 1];
       }
     }
-        
+
     // set new position
     if(sprite.settings.dir == 'vertical'){
       sprite.settings.y = frame * sprite.settings.h;
@@ -281,12 +289,12 @@ game.sprite = function(options){
     else{
       sprite.settings.x = frame * sprite.settings.w;
     }
-    
+
     // render
     game.ctx.drawImage(sprite.settings.image, sprite.settings.x, sprite.settings.y, sprite.settings.w, sprite.settings.h, x, y, w, h);
-    
+
   };
-  
+
 };
 
 // load images
@@ -321,15 +329,17 @@ game.player.settings.sprites['boost'] = new game.sprite({
   w: 32,
   h: 40,
   frames: [5, 6]
-});</pre>
+});
+{% endhighlight %}
 
 The `game.sprite()` object allows us to quickly specify a width, height, speed, and direction of our sprite image. Using this function, we can extend our `entity()` object to include support for sprite images. The `game.load()` function handles image loading, so that we can preload images before the game begins.
 
 ### Keyboard interaction
 
-The final addition to our game script is keyboard interaction. With game development, it&#8217;s much easier to keep track of both the `keyup` and `keydown` events independently. I prefer to create an array of keycodes that can be checked at any time in our script to see if that particular key is currently pressed. We can do this with an addition to our game script:
+The final addition to our game script is keyboard interaction. With game development, it’s much easier to keep track of both the `keyup` and `keydown` events independently. I prefer to create an array of keycodes that can be checked at any time in our script to see if that particular key is currently pressed. We can do this with an addition to our game script:
 
-<pre>// keyboard
+{% highlight js %}
+// keyboard
 game.keys = [];
 game.keydown = function(e){
   game.keys[e.keyCode] = true;
@@ -340,18 +350,20 @@ game.keyup = function(e){
 
 // listen
 window.addEventListener('keydown', game.keydown, false);
-window.addEventListener('keyup', game.keyup, false);</pre>
+window.addEventListener('keyup', game.keyup, false);
+{% endhighlight %}
 
 This function allows us to keep track of every keyboard event. For example, if we want to know at any time if the left-arrow-key is depressed, we can check `game.keys[37]`, which will return `true` when depressed, and `false` or `undefined` when otherwise. We can put this to good use by running a new function every time our `game.update()` is executed.
 
-<pre>game.keypress = function(d){
-  
+{% highlight js %}
+game.keypress = function(d){
+
   // boost
   var boost = 1;
   if(game.keys[16]){
     boost = 3;
   }
-  
+
   // thrust
   if(game.keys[40]){
     game.player.settings.v.x += Math.cos((game.player.settings.o - 270) * Math.PI / 180) * 0.002 * game.player.settings.speed * d;
@@ -366,31 +378,31 @@ This function allows us to keep track of every keyboard event. For example, if w
       game.player.settings.status = 'boost';
     }
   }
-  
+
   // rotate
   if(game.keys[37]){
     game.player.settings.o -= (0.15 / boost) * d;
-    if(game.player.settings.o &lt; 0){ game.player.settings.o = 360 - game.player.settings.o; } else if(game.player.settings.o &gt; 360){
+    if(game.player.settings.o < 0){ game.player.settings.o = 360 - game.player.settings.o; } else if(game.player.settings.o > 360){
       game.player.settings.o = 0 + game.player.settings.o;
     }
   }
   if(game.keys[39]){
     game.player.settings.o += (0.15 / boost) * d;
-    if(game.player.settings.o &lt; 0){ game.player.settings.o = 360 - game.player.settings.o; } else if(game.player.settings.o &gt; 360){
+    if(game.player.settings.o < 0){ game.player.settings.o = 360 - game.player.settings.o; } else if(game.player.settings.o > 360){
       game.player.settings.o = 0 + game.player.settings.o;
     }
   }
-  
-};</pre>
 
-This last piece of our script allows users to manipulate the `player` object&#8217;s orientation, movement vector, and speed using the arrow keys. This allows users to rotate their ship and move about the game world. We&#8217;ve even added a speed boost when the shift key and the up arrow are pressed at the same time.
+};
+{% endhighlight %}
+
+This last piece of our script allows users to manipulate the `player` object’s orientation, movement vector, and speed using the arrow keys. This allows users to rotate their ship and move about the game world. We’ve even added a speed boost when the shift key and the up arrow are pressed at the same time.
 
 ### The final product
 
-With a bit of tweaking, we&#8217;ve added hundreds of randomly placed stars and planets to our game, creating a small two-dimensional world that we can explore in our ship. Try it out using the arrow keys on your keyboard.
-  
-<canvas id="space" style="background: #000;" width="720" height="500"></canvas>
-  
+With a bit of tweaking, we’ve added hundreds of randomly placed stars and planets to our game, creating a small two-dimensional world that we can explore in our ship. Try it out using the arrow keys on your keyboard.
 
+<canvas id="space" style="background: #000;" width="720" height="500"></canvas>
+<script src="/assets/downloads/space.js"></script>
 
 You can download the source code and play the game full screen at <http://oldrivercreative.com/space/>.

@@ -5,7 +5,7 @@ date: 2008-10-24T17:21:07+00:00
 author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=74
-permalink: /development/navigation-using-unordered-lists/
+permalink: /navigation-using-unordered-lists
 categories:
   - Development
 tags:
@@ -13,7 +13,7 @@ tags:
   - Navigation
   - XHTML
 ---
-An unordered list (the `<ul/>` tag in HTML) is a great way to easily organize your site navigation with a minimal use of HTML, but how is it done? This is a simple tutorial showing you exactly how to create a simple list-based navigation menu in your site.<!--more-->
+An unordered list (the `<ul/>` tag in HTML) is a great way to easily organize your site navigation with a minimal use of HTML, but how is it done? This is a simple tutorial showing you exactly how to create a simple list-based navigation menu in your site.
 
 ## Vertical Menus
 
@@ -21,74 +21,84 @@ Vertical menus are the easiest list-based menus to create; basically all you hav
 
 ### The HTML:
 
-<pre>&lt;ul class="navigation"&gt;
-    &lt;li&gt;&lt;a href="http://www.google.com"&gt;Google&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="http://www.yahoo.com"&gt;Yahoo!&lt;/a&gt;
-        &lt;ul&gt;
-            &lt;li&gt;&lt;a href="http://www.yahoo.com/shopping"&gt;Yahoo! Shopping&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="http://www.yahoo.com/sports"&gt;Yahoo! Sports&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="http://www.yahoo.com/weather"&gt;Yahoo! Weather&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href="http://www.amazon.com"&gt;Amazon&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="http://www.ebay.com"&gt;eBay&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</pre>
+{% highlight html %}
+<ul class="navigation">
+  <li><a href="http://www.google.com">Google</a></li>
+  <li><a href="http://www.yahoo.com">Yahoo!</a>
+    <ul>
+      <li><a href="http://www.yahoo.com/shopping">Yahoo! Shopping</a></li>
+      <li><a href="http://www.yahoo.com/sports">Yahoo! Sports</a></li>
+      <li><a href="http://www.yahoo.com/weather">Yahoo! Weather</a></li>
+    </ul>
+  </li>
+  <li><a href="http://www.amazon.com">Amazon</a></li>
+  <li><a href="http://www.ebay.com">eBay</a></li>
+</ul>
+{% endhighlight %}
 
 ### The CSS:
 
-<pre>ul.navigation,
+{% highlight css %}
+ul.navigation,
 ul.navigation ul {
-	margin: 0;
+  margin: 0;
 }
+
 ul.navigation li {
-	list-style-type: none;
-	padding: 0 0 0 20px;
-}</pre>
+  list-style-type: none;
+  padding: 0 0 0 20px;
+}
+{% endhighlight %}
 
 ### The Result:
 
-<img class="alignnone size-full wp-image-76" title="Vertical Navigation" src="https://kyleschaeffer.com/wp-content/uploads/2008/10/navigation1.gif" alt="" width="151" height="130" />
+![](/assets/img/navigation1.gif)
 
 ## Horizontal Menus
 
-Horizontal menus are slightly more complex than the vertical variety, but they aren&#8217;t so far removed. As you can see in the example below, the HTML remains largely the same; we&#8217;ll modify the CSS to allow the navigation list items to appear in left-to-right orientation.
+Horizontal menus are slightly more complex than the vertical variety, but they aren’t so far removed. As you can see in the example below, the HTML remains largely the same; we’ll modify the CSS to allow the navigation list items to appear in left-to-right orientation.
 
 ### The HTML:
 
-<pre>&lt;ul class="navigation"&gt;
-    &lt;li&gt;&lt;a href="http://www.google.com"&gt;Google&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="http://www.yahoo.com"&gt;Yahoo!&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="http://www.amazon.com"&gt;Amazon&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="http://www.ebay.com"&gt;eBay&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</pre>
+{% highlight html %}
+<ul class="navigation">
+  <li><a href="http://www.google.com">Google</a></li>
+  <li><a href="http://www.yahoo.com">Yahoo!</a></li>
+  <li><a href="http://www.amazon.com">Amazon</a></li>
+  <li><a href="http://www.ebay.com">eBay</a></li>
+</ul>
+{% endhighlight %}
 
 ### The CSS:
 
-<pre>ul.navigation,
+{% highlight css %}
+ul.navigation,
 ul.navigation ul {
-	margin: 0;
+  margin: 0;
 }
+
 ul.navigation li {
-	list-style-type: none;
-	<strong>float: left;</strong>
-}</pre>
+  list-style-type: none;
+  float: left;
+}
+{% endhighlight %}
 
 ### The Result:
 
-<img class="alignnone size-full wp-image-77" title="Horizontal Navigation" src="https://kyleschaeffer.com/wp-content/uploads/2008/10/navigation2.gif" alt="" width="232" height="18" />
+![](/assets/img/navigation2.gif)
 
-The basic structure (as shown in the examples above) can be used for your site menus, but you&#8217;ll undoubtedly want to add some style and color to match the design of your site. Here are a few examples to get you started and to perhaps give you some ideas of your own.
+The basic structure (as shown in the examples above) can be used for your site menus, but you’ll undoubtedly want to add some style and color to match the design of your site. Here are a few examples to get you started and to perhaps give you some ideas of your own.
 
 ## Vertical Navigation
 
 Click on the image below to see the demo. On the demo page, right-click and view source to see the code.
 
-<a href="https://kyleschaeffer.com/wp-content/uploads/2008/10/verticalmenu.htm" target="_blank"><img class="alignnone size-full wp-image-78" style="border: 0pt none;" title="Vertical Navigation Styled" src="https://kyleschaeffer.com/wp-content/uploads/2008/10/navigation3.gif" alt="" width="171" height="179" /></a>
+[![](/assets/img/navigation3.gif)](/assets/img/verticalmenu.htm)
 
 ## Horizontal Navigation
 
 Click on the image below to see the demo. On the demo page, right-click and view source to see the code.
 
-<a href="https://kyleschaeffer.com/wp-content/uploads/2008/10/horizontalmenu.htm" target="_blank"><img class="alignnone size-full wp-image-79" style="border: 0pt none;" title="Horizontal Navigation Styled" src="https://kyleschaeffer.com/wp-content/uploads/2008/10/navigation4.gif" alt="" width="333" height="65" /></a>
+[![](/assets/img/navigation4.gif)](/assets/img/horizontalmenu.htm)
 
-As you can see, we&#8217;re using CSS to add rollover effects and sub-menu background colors. You can add images and other navigation elements to take your design even further.
+As you can see, we’re using CSS to add rollover effects and sub-menu background colors. You can add images and other navigation elements to take your design even further.

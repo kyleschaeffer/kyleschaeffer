@@ -1,9 +1,9 @@
 // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
 // http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
- 
+
 // requestAnimationFrame polyfill by Erik MÃ¶ller
 // fixes from Paul Irish and Tino Zijdel
- 
+
 (function() {
     var lastTime = 0;
     var vendors = ['ms', 'moz', 'webkit', 'o'];
@@ -12,7 +12,7 @@
         window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame']
                                    || window[vendors[x]+'CancelRequestAnimationFrame'];
     }
- 
+
     if (!window.requestAnimationFrame)
         window.requestAnimationFrame = function(callback, element) {
             var currTime = new Date().getTime();
@@ -22,7 +22,7 @@
             lastTime = currTime + timeToCall;
             return id;
         };
- 
+
     if (!window.cancelAnimationFrame)
         window.cancelAnimationFrame = function(id) {
             clearTimeout(id);
@@ -39,7 +39,7 @@ function merge(obj1, obj2){
 
 // game
 function game(){
-    
+
     // properties
     var game = this;
     game.canvas = document.getElementById('space');
@@ -55,10 +55,10 @@ function game(){
     game.keys = [];
     game.time = false;
     game.DEBUG = false;
-    
+
     // initialize
     game.init = function(){
-        
+
         // listen
         window.addEventListener('resize', game.resize, false);
         window.addEventListener('orientationchange', game.resize, false);
@@ -66,28 +66,28 @@ function game(){
         window.addEventListener('keyup', game.keyup, false);
         window.addEventListener('blur', game.blur, false);
         game.canvas.addEventListener('click', game.click, false);
-        
+
         // resize
         game.resize();
-        
+
         // main loop
         game.loop();
-        
+
     };
-    
+
     // load images
     game.load = function(images){
-        
+
         // load image from url
         var loadFromUrl = function(url){
             var img = new Image();
-            img.src = 'http://kyleschaeffer.com/wordpress/wp-content/uploads/2014/05/' + url + '.png';
+            img.src = '/assets/img/' + url + '.png';
             game.resources[url] = { image: img, loaded: false };
             img.onload = function(){
                 game.resources[url].loaded = true;
             };
         };
-        
+
         // accept array or single resource
         if(images instanceof Array){
             for(var i = 0; i < images.length; i++){
@@ -97,12 +97,12 @@ function game(){
         else{
             loadFromUrl(images);
         }
-        
+
     };
-    
+
     // sprites
     game.sprite = function(options){
-        
+
         // settings
         var sprite = this;
         sprite.settings = {
@@ -119,15 +119,15 @@ function game(){
             loop: true
         };
         sprite.settings = merge(sprite.settings, options);
-        
+
         // update
         sprite.update = function(d){
             sprite.settings.index += sprite.settings.speed * d;
         };
-        
+
         // draw
         sprite.draw = function(x, y, w, h){
-            
+
             // determine which frame to draw
             var frame = 0;
             if(sprite.settings.speed > 0){
@@ -138,7 +138,7 @@ function game(){
                     var frame = sprite.settings.frames[sprite.settings.frames.length - 1];
                 }
             }
-            
+
             // set new position
             if(sprite.settings.dir == 'vertical'){
                 sprite.settings.y = frame * sprite.settings.h;
@@ -146,14 +146,14 @@ function game(){
             else{
                 sprite.settings.x = frame * sprite.settings.w;
             }
-            
+
             // render
             game.ctx.drawImage(sprite.settings.image, sprite.settings.x, sprite.settings.y, sprite.settings.w, sprite.settings.h, x, y, w, h);
-            
+
         };
-        
+
     };
-    
+
     // resize canvas
     game.resize = function(){
         game.ctx.canvas.width = game.canvas.width;
@@ -161,24 +161,24 @@ function game(){
         game.width = game.canvas.width;
         game.height = game.canvas.height;
     };
-    
+
     // translate coordinates
     game.translate = function(x, y){
-        
+
         return {
             x: (game.width / 2) - game.view.x + x,
             y: (game.height / 2) - game.view.y + y
         }
-        
+
     };
-    
+
     // click
     game.click = function(e){
-        
+
         // get click coordinates
         var x = e.offsetX - Math.floor(game.width / 2) + game.view.x;
         var y = e.offsetY - Math.floor(game.height / 2) + game.view.y;
-        
+
         // map entities
         for(var i = 0; i < game.map.length; i++){
             if(x >= game.map[i].settings.x - (game.map[i].settings.w / 2) && x <= game.map[i].settings.x + (game.map[i].settings.w / 2) && y >= game.map[i].settings.y - (game.map[i].settings.h / 2) && y <= game.map[i].settings.y + (game.map[i].settings.h / 2)){
@@ -193,9 +193,9 @@ function game(){
                 game.map[i].settings.selected = false;
             }
         }
-        
+
     };
-    
+
     // keyboard
     game.keydown = function(e){
         if(e.keyCode == 40 || e.keyCode == 38 || e.keyCode == 37 || e.keyCode == 39){
@@ -205,21 +205,21 @@ function game(){
     };
     game.keyup = function(e){
         game.keys[e.keyCode] = false;
-        
+
         // end thrust
         if(!game.keys[38] && !game.keys[40]){
             game.player.settings.status = 'rest';
         }
-        
+
     };
     game.keypress = function(d){
-        
+
         // boost
         var boost = 1;
         if(game.keys[16]){
             boost = 3;
         }
-        
+
         // thrust
         if(game.keys[40]){
             game.player.settings.v.x += Math.cos((game.player.settings.o - 270) * Math.PI / 180) * 0.002 * game.player.settings.speed * d;
@@ -234,7 +234,7 @@ function game(){
                 game.player.settings.status = 'boost';
             }
         }
-        
+
         // rotate
         if(game.keys[37]){
             game.player.settings.o -= (0.15 / boost) * d;
@@ -254,74 +254,74 @@ function game(){
                 game.player.settings.o = 0 + game.player.settings.o;
             }
         }
-        
+
     };
-    
+
     // blur
     game.blur = function(){
         for(var i = 0; i < game.keys.length; i++){
             game.keys[i] = false;
         }
     };
-    
+
     // game loop
     game.loop = function(){
-        
+
         // timing
         var now = new Date().getTime();
         var d = now - (game.time || now);
         game.time = now;
-        
+
         // keyboard
         game.keypress(d);
-        
+
         // update
         game.update(d);
-        
+
         // render
         game.render(d);
-        
+
         // request next frame
         requestAnimationFrame(game.loop);
-        
+
     };
-    
+
     // update
     game.update = function(d){
-        
+
         // update player
         game.player.update(d);
-        
+
         // update view
         game.view.x = game.player.settings.x;
         game.view.y = game.player.settings.y;
-        
+
     };
-    
+
     // render
     game.render = function(d){
-        
+
         // clear
         game.ctx.clearRect(0, 0, game.width, game.height);
-        
+
         // draw background
         for(var i = 0; i < game.background.length; i++){
             game.background[i].draw(d);
         }
-        
+
         // draw map
         for(var i = 0; i < game.map.length; i++){
             game.map[i].draw(d);
         }
-        
+
         // draw player
         game.player.draw(d);
-        
+
     };
-    
+
     // entity
     game.entity = function(options){
-        
+
         // settings
         var entity = this;
         entity.settings = {
@@ -339,42 +339,42 @@ function game(){
             selected: false
         };
         entity.settings = merge(entity.settings, options);
-        
+
         // update
         entity.update = function(d){
-            
+
             // update position
             entity.settings.x += (entity.settings.v.x / 10) * d;
             entity.settings.y += (entity.settings.v.y / 10) * d;
-            
+
             // friction
             entity.settings.v.x -= entity.settings.v.x * entity.settings.f * d;
             entity.settings.v.y -= entity.settings.v.y * entity.settings.f * d;
-            
+
         };
-        
+
         // draw
         entity.draw = function(d){
-            
+
             // only draw when in view
             if(entity.settings.x - (entity.settings.w / 2) <= game.view.x + (game.width / 2) && entity.settings.x + (entity.settings.w / 2) >= game.view.x - (game.width / 2) && entity.settings.y - (entity.settings.h / 2) <= game.view.y + (game.height / 2) && entity.settings.y + (entity.settings.h / 2) >= game.view.y - (game.height / 2)){
-                
+
                 // get translated coordinates
                 var t = game.translate(entity.settings.x, entity.settings.y);
-                
+
                 // orientation
                 game.ctx.save();
                 game.ctx.translate(t.x, t.y);
                 game.ctx.rotate(entity.settings.o * Math.PI / 180);
-                
+
                 // color
                 game.ctx.fillStyle = 'rgba(' + entity.settings.color.red + ', ' + entity.settings.color.green + ', ' + entity.settings.color.blue + ', ' + entity.settings.color.alpha + ')';
-                
+
                 // draw entity
                 game.ctx.beginPath();
                 game.ctx.rect(0 - (entity.settings.w / 2), 0 - (entity.settings.h / 2), entity.settings.w, entity.settings.h);
                 game.ctx.fill();
-                
+
                 // sprites
                 if(entity.settings.sprites[entity.settings.status]){
                     entity.settings.sprites[entity.settings.status].update(d);
@@ -382,7 +382,7 @@ function game(){
                     entity.settings.sprites[entity.settings.status].draw(0 - (entity.settings.w / 2), 0 - (entity.settings.h / 2), entity.settings.w, entity.settings.h);
                     game.ctx.globalAlpha = 1;
                 }
-                
+
                 // selected entities
                 if(entity.settings.selected){
                     game.ctx.strokeStyle = 'rgba(255, 255, 255, 1)';
@@ -391,7 +391,7 @@ function game(){
                     game.ctx.stroke();
                 }
                 game.ctx.restore();
-                
+
                 // movement vector
                 if(game.DEBUG && (Math.abs(entity.settings.v.x) > 0 || Math.abs(entity.settings.v.y) > 0)){
                     game.ctx.beginPath();
@@ -401,13 +401,13 @@ function game(){
                     game.ctx.lineTo(t.x + (entity.settings.v.x * 20), t.y + (entity.settings.v.y * 20));
                     game.ctx.stroke();
                 }
-                
+
             }
-            
+
         };
-        
+
     };
-    
+
 }
 
 // begin game

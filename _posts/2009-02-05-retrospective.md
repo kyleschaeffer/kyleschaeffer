@@ -5,13 +5,13 @@ date: 2009-02-05T17:15:36+00:00
 author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=176
-permalink: /uncategorized/retrospective/
+permalink: /retrospective
 categories:
   - Uncategorized
 tags:
   - Writing
 ---
-This is a paper that I had to write for a psychology class that I&#8217;m currently taking.  I had fun in writing it, so I figured that I would share it with more than just my professor.  Without further adieu&#8230;<!--more-->
+This is a paper that I had to write for a psychology class that I’m currently taking.  I had fun in writing it, so I figured that I would share it with more than just my professor.  Without further adieu&hellip;
 
 There was a time in my life where I was totally and utterly careless about everything and everyone in my world. I was sailing through life without any direction or purpose in mind. There was nothing that I could do that would give me a true feeling of emotion or happiness. Those moments in your life that seem to define who you are, those precious situations that are vividly imprinted on your mind, for no apparent reason, did not seem to occur. It’s almost as if I just stopped making memories. Years of my life were spent waiting, watching, and wilting away. Looking back, that period seems so dull, so drab, so utterly gray in contrast with the rest of my life. Breaking that monotonous and rhythmic routine was the most challenging and rewarding experience of my life.
 
