@@ -1,0 +1,11 @@
+body {
+	background: #444;
+}
+#canvas {
+	height: 500px;
+}
+#chapter-title {
+	width: 253px;
+	height: 61px;
+	background: url('i/chapter-title-the-university.png');
+}

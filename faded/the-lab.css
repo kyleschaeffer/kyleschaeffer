@@ -1,0 +1,150 @@
+body {
+	background: #888;
+}
+#canvas {
+	height: 1385px;
+}
+#chapter-title {
+	width: 142px;
+	height: 52px;
+	background: url('i/chapter-title-the-lab.png');
+}
+#window {
+	top: 0;
+	right: 0;
+	width: 858px;
+	height: 273px;
+	background: url('i/basement-window.png') no-repeat;
+}
+#alkali {
+	top: 53px;
+	left: 50%;
+	margin-left: -481px;
+	width: 962px;
+	height: 717px;
+	background: url('i/the-alkali.png') no-repeat;
+}
+#computer {
+	top: 639px;
+	left: 50%;
+	margin-left: -412px;
+	width: 905px;
+	height: 746px;
+	background: url('i/lab-computer.png') no-repeat;
+}
+#screen {
+	top: 91px;
+	left: 152px;
+	width: 561px;
+	height: 427px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-family: "Courier New", Courier, fixed, serif;
+	font-size: 17px;
+	color: #a7e327;
+	font-weight: bold;
+	line-height: 19px;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+}
+#screen a {
+	color: #a7e327;
+	text-decoration: underline;
+}
+#screen a:hover {
+	color: #fff;
+}
+#screen a.answer {
+	color: #fff;
+}
+#power {
+	display: block;
+	position: absolute;
+	top: 534px;
+	left: 674px;
+	width: 33px;
+	height: 31px;
+	text-indent: -99999px;
+}
+#led {
+	top: 536px;
+	left: 160px;
+	width: 27px;
+	height: 15px;
+	background: url('i/led-lights.png') 0 0 no-repeat;
+}
+#led.alt {
+	background-position: 0 -15px;
+}
+#board {
+	top: 187px;
+	left: 152px;
+	width: 270px;
+	height: 300px;
+}
+#reset {
+	position: absolute;
+	top: 477px;
+	left: 172px;
+	display: none;
+	font-family: "Courier New", Courier, fixed, serif;
+	font-size: 15px;
+	color: #a7e327;
+	font-weight: bold;
+}
+#continue {
+	position: absolute;
+	top: 477px;
+	right: 205px;
+	display: none;
+	font-family: "Courier New", Courier, fixed, serif;
+	font-size: 15px;
+	color: #a7e327;
+	font-weight: bold;
+}
+#continue a {
+	color: #a7e327;
+	text-decoration: underline;
+}
+#reset:hover, #continue a:hover {
+	color: #fff;
+}
+#key {
+	top: 187px;
+	left: 442px;
+	width: 270px;
+	height: 300px;
+}
+.digit {
+	display: block;
+	float: left;
+	width: 50px;
+	height: 38px;
+	padding: 12px 0 0 0;
+	border: 1px transparent solid;
+	color: #a7e327;
+	font-size: 19px;
+	text-align: center;
+	cursor: pointer;
+}
+.digit.zero {
+	color: #666;
+}
+.digit:hover {
+	color: #fff;
+	border-color: #666;
+}
+.key {
+	display: block;
+	float: left;
+	width: 49px;
+	height: 49px;
+	margin: 0 1px 1px 0;
+	border: 1px solid #666;
+	background: #a7e327;
+}
+.key.off {
+	background: transparent;
+}
