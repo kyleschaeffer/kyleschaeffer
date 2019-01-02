@@ -13,8 +13,9 @@ tags:
   - DHTML
   - JavaScript
   - jQuery
+excerpt_separator: <!--more-->
 ---
-The “lightbox” is a unique and useful design tool when used properly. It allows designers to present information that is totally independent from the site theme, and it is especially useful when displaying information that is loaded via AJAX requests (often negating the need for additional post-backs on your pages). There are countless ways to implement lightbox functionality into your site, and almost every option I’ve ever seen is weighed down by extraneous functionality or useless transition animations. It’s quite easy to create your own lightboxes with minimal effort. This tutorial can serve as a quick and easy template to get you started.
+The “lightbox” is a unique and useful design tool when used properly. It allows designers to present information that is totally independent from the site theme, and it is especially useful when displaying information that is loaded via AJAX requests (often negating the need for additional post-backs on your pages). There are countless ways to implement lightbox functionality into your site, and almost every option I’ve ever seen is weighed down by extraneous functionality or useless transition animations. It’s quite easy to create your own lightboxes with minimal effort. This tutorial can serve as a quick and easy template to get you started.<!--more-->
 
 ## The CSS Style
 

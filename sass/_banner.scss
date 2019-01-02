@@ -1,0 +1,51 @@
+.banner {
+  background: $primary;
+  height: 250px;
+  position: relative;
+}
+
+#lights {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.brand {
+  bottom: 0;
+  color: $white;
+  font-family: $font-head;
+  font-size: 90px;
+  font-weight: $wx;
+  left: 0;
+  letter-spacing: -.045em;
+  line-height: 68px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 2;
+
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+}
+
+.tagline {
+  color: $white;
+  display: block;
+  font-weight: $wl;
+  left: 0;
+  line-height: $s;
+  position: absolute;
+  text-align: center;
+  top: 33%;
+  width: 100%;
+  z-index: 2;
+}

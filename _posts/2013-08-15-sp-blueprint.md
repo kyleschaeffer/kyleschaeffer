@@ -15,8 +15,6 @@ tags:
 ---
 In my previous post, [Minifying SharePoint 2013](/minifying-sharepoint-2013), I talked about the idea of minifying SharePoint’s CSS files in order to achieve better performance and better style cascading in CSS. Truly, this was the direct result of my work on a starter master page template I had been working on for SharePoint 2013, which is now [available on CodePlex](https://spblueprint.codeplex.com/).
 
-__
-
 _SP Blueprint_ is a responsive starter master page template for SharePoint 2013. Simply deploy the SP Blueprint design package and you will have a mobile-first responsive design that adapts to desktops, tablets, smart phones, televisions, and more. It isn’t a silver bullet for your mobile-friendly SharePoint site, but it can certainly help you optimize your content for today’s diverse and sometimes overwhelming plethora of screen sizes and characteristics. This is what it looks like in a few common viewport sizes:
 
 **SP Blueprint (desktop size):**

@@ -1,27 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} / Kyle Schaeffer</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}{% link sass/blog.scss %}">
 </head>
 <body>
-  <header class="lights" role="banner">
+  <header class="banner" role="banner">
     <canvas id="lights" width="400" height="100"></canvas>
-    <a class="brand" href="/">
-
-    </a>
-    <nav role="navigation">
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-    </nav>
+    <a class="brand" href="{{ site.baseurl }}{% link index.md %}">Kyle Schaeffer</a>
+    <span class="tagline">Enterprise App Design and Development</span>
   </header>
-  <main role="main">
+  <main class="main" role="main">
     {{ content }}
   </main>
   <footer role="contentinfo">
+    <nav role="navigation">
+      <a href="{{ site.baseurl }}{% link index.md %}">Home</a>
+      <a href="{{ site.baseurl }}{% link about.md %}">About</a>
+    </nav>
     &copy; Kyle Schaeffer
   </footer>
+  <script defer src="{{ site.baseurl }}{% link js/lights.js %}"></script>
 </body>
 </html>

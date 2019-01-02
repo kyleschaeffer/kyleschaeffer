@@ -1,10 +1,12 @@
 ---
-layout: default
+layout: page
 ---
 
-<div class="container">
-  <h1>{{ page.title }}</h1>
-  <p class="meta">{{ page.date }} • {{ page.author }}</p>
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <p class="post-meta">Posted by {{ page.author }} on <time datetime="{{ page.date }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+
+  <hr>
 
   {{ content }}
-</div>
+</article>

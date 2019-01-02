@@ -1,0 +1,105 @@
+// Document
+body {
+  background: $white;
+  color: $darker;
+  font-family: $font-body;
+  font-size: $s;
+  line-height: $h;
+  margin: 0;
+  padding: 0;
+}
+
+// Links
+a {
+  color: $primary;
+  text-decoration: underline;
+  transition: color $t ease;
+
+  &:hover,
+  &:focus {
+    color: darken($primary, 3%);
+  }
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+  font-family: $font-body;
+  font-weight: $wb;
+  line-height: $hc;
+  margin: 0 0 .2em;
+
+  p + &,
+  ul + &,
+  ol + &,
+  pre + & {
+    margin-top: 1em;
+  }
+}
+
+h1 {
+  font-size: 2em;
+  font-family: $font-head;
+  font-weight: $wx;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: $wl;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: $ws;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: .9em;
+}
+
+h6 {
+  font-size: .8em;
+}
+
+// Paragraphs
+p {
+  margin: 0 0 $h;
+}
+
+// Lists
+ol,
+ul {
+  margin: 0 0 $h;
+  padding: 0 0 0 $hh;
+
+  li {
+    + li {
+      margin-top: .75em;
+    }
+  }
+}
+
+ul {
+  list-style-type: square;
+
+  ul {
+    list-style-type: circle;
+  }
+}
+
+// Rules
+hr {
+  background: $lighter;
+  border: 0;
+  height: 1px;
+  margin: $hh 0;
+}

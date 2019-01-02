@@ -1,0 +1,59 @@
+// Code
+pre,
+code {
+  background: $lighter;
+  border-radius: $r;
+  font-family: $font-mono;
+  font-size: .8em;
+}
+
+code {
+  display: inline-block;
+  padding: 0 .4em;
+}
+
+pre {
+  line-height: $hh;
+  margin: 0 0 $h;
+  padding: $s;
+  overflow-x: auto;
+  white-space: pre;
+
+  code {
+    background: transparent;
+    border-radius: 0;
+    display: inline-block;
+    font-size: inherit;
+    padding: 0;
+  }
+
+  span {
+    display: inline-block;
+  }
+}
+
+// Highlight
+.highlight {
+  .c,
+  .c1 {
+    color: $medium;
+  }
+
+  .k,
+  .nt,
+  .nx {
+    color: $info;
+  }
+
+  .o {
+    color: $danger;
+  }
+
+  .kc,
+  .mi,
+  .s,
+  .s1,
+  .s2 {
+    color: $success;
+  }
+}

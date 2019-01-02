@@ -10,8 +10,9 @@ categories:
   - Development
 tags:
   - JavaScript
+excerpt_separator: <!--more-->
 ---
-In my last post, [Making \<canvas\> Art](/making-canvas-art), I introduced the idea of using the HTML5 `<canvas>` API to create a randomly-generated “northern lights” animation. The effect of the resulting animation is entirely aesthetic in nature. It provides no interactivity beyond the generation of new colors and shapes. In this follow-up post, we’ll use the same technique introduced in the original post, but extend our example to introduce keyboard input and manipulation in order to create a fully interactive game.
+In my last post, [Making \<canvas\> Art](/making-canvas-art), I introduced the idea of using the HTML5 `<canvas>` API to create a randomly-generated “northern lights” animation. The effect of the resulting animation is entirely aesthetic in nature. It provides no interactivity beyond the generation of new colors and shapes. In this follow-up post, we’ll use the same technique introduced in the original post, but extend our example to introduce keyboard input and manipulation in order to create a fully interactive game.<!--more-->
 
 We’ll be creating a game I’m calling _Space_. It’s a simple game in which you use the keyboard to navigate a two-dimensional map of stars and planets. For the sake of brevity, the full script will be made available at the bottom of this post, and I’ll use snippets from the script to explain what’s what.
 

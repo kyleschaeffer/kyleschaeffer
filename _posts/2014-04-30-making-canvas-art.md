@@ -10,8 +10,9 @@ categories:
   - Development
 tags:
   - JavaScript
+excerpt_separator: <!--more-->
 ---
-Got `<canvas>`? Focus your attention, if you will, to the top of this web document. The header area of my website includes animated “northern lights” of a sort, generated using HTML5’s new JavaScript rendering engine called `<canvas>`. Click anywhere on the page to generate new lights, each with randomized colors and trajectories that alter the appearance of the site header as they slowly move across the page.
+Got `<canvas>`? Focus your attention, if you will, to the top of this web document. The header area of my website includes animated “northern lights” of a sort, generated using HTML5’s new JavaScript rendering engine called `<canvas>`. Click anywhere on the page to generate new lights, each with randomized colors and trajectories that alter the appearance of the site header as they slowly move across the page.<!--more-->
 
 If you’re not familiar with `<canvas>`, the best way to learn it is to see a simple example. The following HTML and JavaScript will generate an orange rectangle within the `<canvas>` area.
 
@@ -126,7 +127,7 @@ When using animations in your canvas element, all drawing should be performed by
 Now that we understand the canvas element and how to animate it, we can put this together with some artistic creativity to create something more intriguing. In this next example, we’ll randomly generate colored circles and give them random trajectories within our canvas. By drawing the circles using a gradient rather than a solid color, our “northern lights” script will come to life.
 
 {% highlight html %}
-<canvas id="example4" width="400" height="300" style="background-color: #<span style="color: #222222;">0e74a2;"</span>></canvas>
+<canvas id="example4" width="400" height="300" style="background-color: #0e74a2;"></canvas>
 {% endhighlight %}
 
 {% highlight js %}

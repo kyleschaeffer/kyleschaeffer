@@ -5,6 +5,7 @@ date: 2008-09-29T16:53:47+00:00
 author: Kyle
 layout: page
 guid: http://www.kyleschaeffer.com/?page_id=6
+permalink: /about
 ---
 ![Kyle Schaeffer](/assets/img/Kyle-Beard-Headshot.jpg)
 
