@@ -156,7 +156,7 @@ Finally, you can even use this simple lightbox function to insert AJAX content. 
 ## The Demo
 
   * **Try it out:** <a href="javascript:lightbox('Hello, lightbox.');">Show me the lightbox</a>
-  * **Let’s load some AJAX content:** <a href="javascript:lightbox(null, '/assets/downloads/lightbox.css');">Load the CSS file for this tutorial into a lightbox</a>
+  * **Let’s load some AJAX content:** <a href="javascript:lightbox(null, '/assets/css/lightbox.css');">Load the CSS file for this tutorial into a lightbox</a>
 
 If you’re on a fast connection, you may not notice, but the AJAX link actually reads “Loading&hellip;” in the lightbox a split-second before the content actually appears. This can be useful to give users feedback while the AJAX request is processing. Please note that I’ve added a bit of styling to my demo (namely padding on the lightbox to make it appear less cluttered).
 
@@ -166,11 +166,11 @@ You’ll probably want to modify the CSS and other elements of this lightbox in 
 
 To help you get started, you can download the CSS and JavaScript referenced in this tutorial here:
 
-  * [lightbox.css](/assets/downloads/lightbox.css)
-  * [lightbox.js](/assets/downloads/lightbox.js)
+  * [lightbox.css](/assets/css/lightbox.css)
+  * [lightbox.js](/assets/js/lightbox.js)
 
 Good luck, and happy styling!
 
 <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=1.10.2'></script>
-<script src="/assets/downloads/lightbox.js" type="text/javascript"></script>
-<link rel="stylesheet" href="/assets/downloads/lightbox.css" />
+<script src="/assets/js/lightbox.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/assets/css/lightbox.css" />

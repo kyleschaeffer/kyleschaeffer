@@ -1,6 +1,6 @@
 ---
 id: 1555
-title: 'Making <canvas> Games'
+title: Making &lt;canvas&gt; Games
 date: 2014-05-06T16:03:08+00:00
 author: Kyle
 layout: post
@@ -403,6 +403,6 @@ This last piece of our script allows users to manipulate the `player` object’s
 With a bit of tweaking, we’ve added hundreds of randomly placed stars and planets to our game, creating a small two-dimensional world that we can explore in our ship. Try it out using the arrow keys on your keyboard.
 
 <canvas id="space" style="background: #000;" width="720" height="500"></canvas>
-<script src="/assets/downloads/space.js"></script>
+<script src="/assets/js/space.js"></script>
 
 You can download the source code and play the game full screen at <http://oldrivercreative.com/space/>.

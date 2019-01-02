@@ -102,7 +102,7 @@ In this case, I’m loading my site’s RSS feed into a `<div/>` with an ID of `
 #ajax-panel { background: #f5f5f5; border: 1px #ddd solid; padding: 20px; margin: 0 0 5px 0; } .loading { padding: 50px 0; text-align: center; }
 </style>
 <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=1.10.2'></script>
-<script type="text/javascript" src="/assets/downloads/the-perfect-ajax.js"></script>
+<script type="text/javascript" src="/assets/js/the-perfect-ajax.js"></script>
 
 ### Data Types
 

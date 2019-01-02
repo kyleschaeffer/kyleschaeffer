@@ -1,6 +1,6 @@
 ---
 id: 1491
-title: 'Making <canvas> Art'
+title: Making &lt;canvas&gt; Art
 date: 2014-04-30T15:00:22+00:00
 author: Kyle
 layout: post
@@ -36,7 +36,7 @@ context.fillRect(0, 0, 400, 300);
 You always start a canvas drawing by finding the element in the web document and then selecting a “context.” In this case, the context is `2d`, because we want to make two-dimensional shapes within our canvas. After selecting a context, the [canvas API](http://www.w3schools.com/tags/ref_canvas.asp) contains tons of useful drawing features like fill styles, shapes, strokes, shadows, and a plethora of other features that allow us to make fancy alterations to our image area. The result of our script looks something like this:
 
 <canvas id="example1" width="400" height="300"></canvas>
-<script src="/assets/downloads/example1.js"></script>
+<script src="/assets/js/example1.js"></script>
 
 The great thing about `<canvas>` is that it’s a JavaScript API, meaning we can take advantage of all the great features of JavaScript like variables, events, loops, and the like. Let’s adapt our script to create a grid of smaller squares across our canvas area using a simple JavaScript loop.
 
@@ -61,7 +61,7 @@ for(var x = 0; x < canvas.width; x += 25){
 {% endhighlight %}
 
 <canvas id="example2" width="400" height="300"></canvas>
-<script src="/assets/downloads/example2.js"></script>
+<script src="/assets/js/example2.js"></script>
 
 In just a few lines of JavaScript, we were able to generate 192 squares in our canvas. This, in my opinion, is the true value of `<canvas>`. It allows us to leverage the processing power of the web browser to generate math-based geometry and drawings. With a bit of work and a lot of creativity, we can even harness this power for artistic effect.
 
@@ -117,7 +117,7 @@ loop();
 {% endhighlight %}
 
 <canvas id="example3" width="400" height="300"></canvas>
-<script src="/assets/downloads/example3.js"></script>
+<script src="/assets/js/example3.js"></script>
 
 When using animations in your canvas element, all drawing should be performed by a repeatable function. In our example, we’re using the `loop()` function to draw a square in our canvas. The `requestAnimationFrame` function tells the browser to automatically choose when to next draw the frame, based on the available processing power. The result is our `loop()` running over and over, advancing our orange box from left to right. Notice that we use the `d` variable (delta) to determine the time between frames in milliseconds. This is an important addition to normalize the speed of our animation. Without it, our animation would play much faster on computers with better processors, and in a few years when computers gain even more processing power, our animation could be so fast as to confuse or disorient users. Using the delta variable, we can specify a speed per millisecond. In our example, the position of the square advances by `0.1*d`, or 0.1 pixels every millisecond, which translates into 100 pixels per second. No matter the speed of your processor, the animation will always take the same amount of time to complete.
 
@@ -261,7 +261,7 @@ loop();
 {% endhighlight %}
 
 <canvas id="example4" style="background-color: #0e74a2;" width="400" height="300"></canvas>
-<script src="/assets/downloads/example4.js"></script>
+<script src="/assets/js/example4.js"></script>
 
 New randomized circles will appear every time you click in this window. Try it out!
 
