@@ -1,0 +1,382 @@
+/*
+Theme Name: Canvas
+Theme URI: http://www.kyleschaeffer.com
+Description: Canvas theme for KyleSchaeffer.com
+Version: 1.0
+Author: Kyle Schaeffer
+Author URI: http://www.kyleschaeffer.com
+Tags: fixed width, widgets, kyle schaeffer
+*/
+
+body {
+	margin: 0;
+	font-size: 62.5%;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background: #dfdbcd url('i/canvas.jpg');
+	color: #666;
+}
+a {
+	color: #a84d24;
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	color: #833c1d;
+}
+.clear {
+	clear: both;
+}
+hr {
+	height: 1px;
+	border-style: none;
+	color: #ddd;
+	background: #ddd;
+	margin: 1em 0;
+}
+h2 {
+	font-size: 3em;
+	font-weight: normal;
+	margin: 0 0 0.1em 0;
+	color: #56473a;
+	line-height: 1em;
+}
+h2 a, h2 a:visited {
+	color: #56473a;
+}
+h2.widgettitle {
+	font-size: 2.2em;
+	text-transform: lowercase;
+}
+h3 {
+	font-size: 2em;
+	font-weight: normal;
+	margin: 0 0 0.1em 0;
+	color: #566e83;
+}
+h4, h5, h6 {
+	font-size: 1.2em;
+	margin: 0 0 0.2em 0;
+}
+p {
+	margin: 0 0 1.5em 0;
+	line-height: 1.6em;
+}
+strong {
+	color: #000;
+}
+small {
+	font-size: 0.8em;
+	color: #777;
+}
+img {
+	border: 0;
+}
+code {
+	font: 1em 'Courier New', Courier, Fixed;
+}
+pre {
+	display: block;
+	background: #f4f4f4;
+	border: 1px #e1e1e1 solid;
+	padding: 1em;
+	overflow: auto;
+	color: #333;
+	font: 1em 'Courier New', Courier, Fixed;
+	margin: 1em 0 2em 0;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+ul, ol {
+	margin: 0 0 1.5em 0;
+	padding: 0;
+}
+li {
+	margin: 0 0 0 1.5em;
+	line-height: 1.4em;
+}
+ul li {
+	list-style: square;
+}
+input[type=text], input[type=password], select, textarea, label {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 1.2em;
+	font-style: italic;
+}
+input[type=text], input[type=password], select, textarea {
+	background: #f5f5f5;
+	border: 1px #ddd solid;
+	padding: 0.3em;
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+	background: #fff;
+	border-color: #ccc;
+}
+textarea {
+	width: 70%;
+}
+
+/* header */
+#paint {
+	padding: 26px 0 0 0;
+	background: url('i/paint.gif') top no-repeat;
+}
+#page, #header, #footer {
+	width: 960px;
+	margin: auto;
+}
+h1.kyle-schaeffer {
+	margin: 0 0 10px 0;
+}
+h1.kyle-schaeffer a {
+	display: block;
+	width: 443px;
+	height: 106px;
+	background: url('i/kyle-schaeffer.gif');
+	text-indent: -9999px;
+}
+
+/* layout */
+.page-top {
+	width: 656px;
+	float: left;
+	background: url('i/page-bg.png') top left no-repeat;
+	padding: 20px 0 0 0;
+}
+.page-bottom {
+	background: url('i/page-bg.png') bottom right no-repeat;
+	padding: 0 0 20px 0;
+}
+#content {
+	padding: 0 8px;
+	background: url('i/page-bg.png') center repeat-y;
+	font-size: 1.5em;
+}
+.paper-top {
+	background: url('i/paper-top.jpg') top no-repeat;
+}
+.paper-bottom {
+	background: url('i/paper-bottom.jpg') bottom no-repeat;
+	padding: 38px 50px;
+	min-height: 90em;
+}
+#sidebar {
+	width: 312px;
+	float: right;
+	font-size: 1.5em;
+	margin: 0 0 0 -8px;
+	padding: 100px 0 0 0;
+}
+
+/* sidebar and widgets */
+ul#widgets {
+	margin: 0;
+}
+ul#widgets li.widget {
+	list-style: none;
+	margin: 0 0 1em 0;
+	padding: 20px;
+	background: url('i/widget.png') bottom left no-repeat;
+}
+ul#widgets li.widget#text-5 {
+	padding: 0;
+	background-image: none;
+}
+ul#widgets li.widget#text-3 {
+	padding: 0;
+	background-image: none;
+	margin: 0;
+}
+a.portfolio-link {
+	display: block;
+	width: 171px;
+	height: 69px;
+	background: url('i/portfolio.png') no-repeat;
+	text-indent: -9999em;
+	margin: 0 0 0 135px;
+}
+a.contact-me {
+	display: block;
+	width: 271px;
+	height: 129px;
+	background: url('i/contact-me.png') no-repeat;
+	text-indent: -9999em;
+}
+
+/* posts */
+div.post {
+	position: relative;
+	margin: 0 0 3em 0;
+}
+p.post-date {
+	position: absolute;
+	top: 0;
+	left: -80px;
+	width: 65px;
+	height: 89px;
+	text-align: center;
+	margin: 0;
+	padding: 0 5px 0 0;
+	background: url('i/date.png') no-repeat;
+	line-height: 1em;
+}
+p.post-date span {
+	display: block;
+}
+p.post-date span.day {
+	padding: 23px 0 7px 0;
+	font-size: 1.4em;
+}
+p.post-date span.month {
+	font-size: 0.8em;
+	color: #9a3c13;
+	font-style: italic;
+}
+.post img {
+	max-width: 540px;
+}
+.more-link {
+	font-weight: bold;
+}
+.navigation {
+	clear: both;
+	font-weight: bold;
+}
+.navigation .alignright, .navigation .next {
+	float: right;
+}
+.navigation .alignleft, .navigation .prev {
+	float: left;
+}
+
+/* comments */
+#comments, #respond {
+	margin: 3em 0 0 0;
+}
+ol.commentlist {
+	margin: 0;
+}
+li.comment, li.pingback {
+	margin: 0 0 2em 0;
+	list-style: none;
+	width: 48%;
+}
+li.comment.even, li.pingback.even {
+	clear: both;
+	float: left;
+}
+li.comment.odd, li.pingback.odd {
+	float: right;
+}
+.comment hr, .pingback hr {
+	display: none;
+}
+.comment-author {
+	margin: 0 0 0.2em 0;
+	padding: 0 0 0.2em 0;
+	border-bottom: 1px solid #ddd;
+}
+.comment p, .pingback p {
+	margin: 0 0 0.5em 0;
+}
+.comment-meta {
+	font-size: 0.8em;
+	color: #999;
+}
+.comment-meta a {
+	color: #999;
+}
+
+/* footer */
+#footer {
+	clear: both;
+	font-size: 1.5em;
+	position: relative;
+}
+#footer .paint {
+	width: 284px;
+	height: 162px;
+	position: absolute;
+	top: -100px;
+	right: 0;
+	background: url('i/footer-paint.gif') no-repeat;
+}
+
+/* portfolio */
+.portfolio-item {
+	clear: both;
+	margin: 0 0 2em 0;
+}
+.portfolio-image {
+	position: relative;
+	float: right;
+	margin: 0 0 0 2em;
+}
+.portfolio-image img {
+	margin: 14px;
+}
+.portfolio-image .portfolio-frame {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 268px;
+	height: 242px;
+	background: url('i/frame.png') no-repeat;
+	text-indent: -9999em;
+}
+#lightbox {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 500px;
+	margin-left: -260px;
+	padding: 10px;
+	background: #fff;
+	z-index: 1001;
+	display: none;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+#lightbox-shadow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+	z-index: 1000;
+	display: none;
+}
+#lightbox .loading {
+	height: 200px;
+	background: url('/wp-content/uploads/2010/04/loading.gif') center no-repeat;
+	text-indent: -9999em;
+}
+.close-lightbox {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-family: Helvetica, Arial, sans-serif;
+	visibility: hidden;
+	line-height: 1em;
+}
+#lightbox:hover .close-lightbox {
+	visibility: visible;
+}
+.close-lightbox a {
+	display: block;
+	padding: 10px;
+	background: #aaa;
+	color: #fff;
+}

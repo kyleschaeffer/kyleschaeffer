@@ -1,0 +1,489 @@
+/*
+Theme Name: kthree
+Author: Kyle Schaeffer
+Version: 1.0
+*/
+
+/* document style */
+body {
+	background: #f7f7f7 url('images/canvas.jpg');
+	font: 62.5% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #666;
+	margin: 0;
+}
+a:link, a:visited {
+	color: #c8210a;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	outline: none;
+	color: #000;
+}
+p {
+	line-height: 1.6em;
+	margin: 0 0 1.5em 0;
+}
+strong {
+	color: #000;
+}
+code {
+	font-family: Courier, 'Courier New', fixed, serif;
+	font-size: 1em;
+	color: #000;
+}
+img {
+	border: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0.3em 0;
+	color: #000;
+	line-height: 1em;
+}
+h2 {
+	font-family: Arvo, Georgia, 'Times New Roman', serif;
+	font-size: 3.1em;
+	line-height: 0.9em;
+	text-shadow: 1px 1px 0 #fff;
+}
+h3 {
+	font-size: 1.7em;
+	text-shadow: 1px 1px 0 #fff;
+}
+h4 {
+	font-size: 1.2em;
+	color: #c8210a;
+}
+h5, h6 {
+	font-size: 1.1em;
+}
+pre {
+	font-size: 1em;
+	line-height: 1.6em;
+	font-family: Courier, 'Courier New', fixed, serif;
+	color: #777;
+	margin: 0.5em 0 1.5em 0;
+	padding: 0.5em 0.5em 0.5em 1.2em;
+	border-left: 10px solid #bbe00c;
+	background: #fff;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+input, textarea, select, label {
+	font-size: 1em;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #000;
+}
+input[type=text], input[type=password], textarea, select {
+	font-size: 1.2em;
+	background: #fff;
+	padding: 0.5em;
+	border: 1px solid #ddd;
+}
+input[type=submit], input[type=reset], input[type=button], button {
+	padding: 1em 2em;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	background: #c8210a;
+	cursor: pointer;
+}
+textarea {
+	width: 90%;
+	font-size: 1em;
+}
+.clear {
+	clear: both;
+}
+
+/* layout */
+.page-width {
+	width: 980px;
+	margin: auto;
+}
+#wrapper {
+	margin: auto;
+	font-size: 1.3em;
+}
+#header {
+	background: #5a534b url('images/header-bg.jpg') bottom repeat-x;
+	color: #f4ecc9;
+	height: 93px;
+}
+#header h1 {
+	margin: 0;
+	float: left;
+}
+#header h1 a {
+	display: block;
+	width: 367px;
+	height: 93px;
+	background: url('images/kyle-schaeffer.png') top no-repeat;
+	text-indent: -9999em;
+}
+#header h1 a:hover {
+	background-position: 0 -93px;
+}
+#slogan {
+	float: left;
+	font: 18px Palatino, 'Book Antiqua', Georgia, 'Times New Roman', serif;
+	margin: 2.4em 0 0 4em;
+	text-transform: lowercase;
+}
+#highlight {
+	background: #fff;
+	padding: 30px 0;
+	color: #888;
+	font-size: 1.15em;
+}
+body.home #highlight {
+	padding: 50px 0;
+}
+#highlight h2 {
+	margin: 0;
+}
+body.home #highlight h2, body.single #highlight h2 {
+	margin: 0 0 0.3em 0;
+}
+#highlight p {
+	margin: 0;
+	line-height: 1.7em;
+}
+#highlight h2 a:link, #highlight h2 a:visited {
+	color: #000;
+}
+#highlight h2 a:hover {
+	text-decoration: none;
+}
+#highlight h2 span.comments a {
+	display: inline-block;
+	vertical-align: middle;
+	width: 27px;
+	height: 24px;
+	line-height: 1em;
+	padding: 5px 0 0 0;
+	margin: 0 0 0 1em;
+	background: url('images/comments-dark.png') no-repeat;
+	text-align: center;
+	color: #fff;
+	font: 0.23em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	text-shadow: none;
+}
+#highlight h2 span.comments a:link, #highlight h2 span.comments a:visited {
+	color: #fff;
+}
+#highlight p.article-date {
+	margin: 0;
+	font-size: 0.8em;
+	color: #999;
+	font-style: italic;
+}
+#page {
+	background: url('images/shadow-under.png') top no-repeat;
+	min-height: 40px;
+}
+#content {
+	width: 770px;
+	float: left;
+	margin: 40px 40px 60px 0;
+}
+body.home #content {
+	margin-top: 50px;
+}
+body.home #content .post {
+	width: 220px;
+	float: left;
+	margin: 0 0 40px 0;
+}
+body.home #content .post.col1, body.home #content .post.col2 {
+	margin: 0 40px 40px 0;
+}
+.post span.comments a {
+	display: inline-block;
+	vertical-align: middle;
+	width: 22px;
+	height: 22px;
+	line-height: 1em;
+	padding: 2px 0 0 0;
+	margin: 0 0 0 0.5em;
+	background: url('images/comments-red.png') no-repeat;
+	text-align: center;
+	color: #fff;
+	font: 0.45em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	text-shadow: none;
+}
+.post span.comments a:link, .post span.comments a:visited {
+	color: #fff;
+}
+.post span.comments a:hover {
+	text-decoration: none;
+}
+body.single .article-content {
+	font-size: 1.1em;
+}
+.article-content h3, .article-content h4 {
+	margin-top: 1.5em;
+}
+.article-content ul {
+	margin: 0 0 1.5em 0;
+	padding: 0 0 0 1em;
+	list-style-type: square;
+}
+.article-content ol {
+	margin: 0 0 1.5em 0;
+	padding: 0 0 0 1em;
+}
+.article-content li {
+	line-height: 1.6em;
+	margin: 0 0 0.5em 1em;
+}
+.article-content p img {
+	margin: 0.5em 0;
+	padding: 0.5em;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+.article-meta {
+	margin: 0;
+	text-align: right;
+}
+#article-author-info {
+	margin: 3em 0 0 0;
+}
+#author-avatar {
+	width: 90px;
+	float: left;
+	margin: 0 0 1em 0;
+}
+#author-avatar img {
+	padding: 0.5em;
+	background: #fff;
+	border: 1px solid #ddd;
+	margin: 0;
+}
+#author-description {
+	width: 680px;
+	float: left;
+	margin: 0 0 1em 0;
+}
+#author-description h4 {
+	color: #000;
+	font-size: 1em;
+	margin-bottom: 0.5em;
+}
+#author-description p {
+	color: #999;
+	font-size: 0.9em;
+}
+.navigation {
+	clear: both;
+	padding: 1em 0 0 0;
+	border-top: 3px dashed #ddd;
+}
+.nav-previous {
+	float: left;
+}
+.nav-next {
+	float: right;
+}
+.nav-previous, .nav-next {
+	font-weight: bold;
+	color: #999;
+}
+.nav-previous a:link, .nav-previous a:visited, .nav-next a:link, .nav-next a:visited {
+	color: #000;
+}
+#comments {
+	clear: both;
+}
+#comments h3 {
+	margin: 4em 0 0 0;
+}
+ol.comments {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+ol.comments li.comment, ol.comments li.pingback {
+	clear: both;
+	margin: 0 0 1.5em 0;
+	padding: 1.5em 0 0 0;
+	border-top: 2px dashed #ddd;
+	list-style: none;
+}
+ol.comments li.comment:first-child, ol.comments li.pingback:first-child {
+	border-top-style: none;
+}
+.comment .comment-author {
+	width: 100px;
+	float: left;
+	font-size: 0.9em;
+	color: #999;
+	word-wrap: break-word;
+}
+.comment .comment-author cite {
+	display: block;
+}
+.comment .comment-author img.avatar {
+	width: 50px;
+	height: 50px;
+	display: block;
+	padding: 5px 5px 18px 5px;
+	background: url('images/comment-bg.png') no-repeat;
+}
+.comment .comment-body {
+	width: 670px;
+	float: left;
+}
+.comment .comment-body p {
+	margin: 0 0 0.75em 0;
+}
+.comment .comment-meta {
+	font-size: 0.85em;
+	color: #aaa;
+}
+.comment .comment-meta a:link, .comment .comment-meta a:visited {
+	color: #aaa;
+}
+.comment a.comment-reply-link:link, .comment a.comment-reply-link:visited {
+	font-weight: bold;
+	color: #000;
+}
+.comment ul.children {
+	clear: both;
+	min-height: 60px;
+	margin: 1.5em 0 0 0;
+	padding: 0 0 0 40px;
+	background: url('images/reply.png') 18px 45px no-repeat;
+	list-style-type: none;
+}
+ol.comments ul.children li.comment:first-child, ol.comments ul.children li.pingback:first-child {
+	border-top-style: dashed;
+}
+.comment ul.children .comment-body {
+	width: 630px;
+}
+.comment ul.children ul.children .comment-body {
+	width: 590px;
+}
+.comment ul.children ul.children ul.children .comment-body {
+	width: 550px;
+}
+.comment ul.children ul.children ul.children ul.children .comment-body {
+	width: 510px;
+}
+#respond {
+	clear: both;
+	padding: 2em 0 0 0;
+}
+#respond h3 {
+	margin: 1em 0 0 0;
+}
+.comment-form-author, .comment-form-email, .comment-form-url {
+	margin: 0 20px 0.5em 0;
+	width: 230px;
+	float: left;
+}
+#respond label, .wpcf7-form label {
+	display: block;
+	font-size: 0.9em;
+	float: left;
+}
+p.comment-form-author span.required, p.comment-form-email span.required, p.comment-form-url span.required {
+	float: left;
+	margin: 0 0.3em;
+}
+#respond input[type=text], .wpcf7-form input[type=text] {
+	display: block;
+	width: 12em;
+	clear: both;
+}
+#respond textarea, .wpcf7-form textarea {
+	display: block;
+	clear: both;
+}
+p.comment-notes, p.form-allowed-tags, p.logged-in-as {
+	color: #999;
+	margin: 0.5em 0;
+}
+span.required {
+	color: #c8210a;
+}
+.wpcf7-response-output {
+	margin: 0 !important;
+	padding: 0 !important;
+	border-style: none !important;
+	color: #000;
+	font-weight: bold;
+}
+#sidebar {
+	width: 160px;
+	float: left;
+	margin: 40px 0 60px 0;
+}
+body.home #sidebar {
+	margin-top: 50px;
+}
+ul.widgets {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul.widgets > li {
+	margin: 0 0 1.5em 0;
+	padding: 0;
+	list-style: none;
+}
+#footer {
+	clear: both;
+	background: #555 url('images/gradient-footer.png') top repeat-x;
+	color: #ddd;
+}
+#footer strong {
+	color: #fff;
+}
+#footer a:link, #footer a:visited {
+	color: #fff;
+	font-weight: bold;
+}
+#footer a:active {
+	color: #fff;
+}
+#footer-photo {
+	width: 201px;
+	margin: -35px 40px 0 0;
+	float: left;
+}
+#footer-photo img {
+	display: block;
+}
+#footer-text {
+	width: 739px;
+	float: left;
+}
+#footer h4 {
+	width: 82px;
+	height: 14px;
+	background: url('images/about-me.png') no-repeat;
+	text-indent: -9999em;
+	margin: 30px 0 0.5em 0;
+}
+#footer p {
+	margin: 0;
+}
+.footer-links {
+	margin: 1em 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+.footer-links li {
+	margin: 0 5em 0 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}

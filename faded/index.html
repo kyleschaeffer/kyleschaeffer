@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml" dir="ltr" lang="en-US">
+<head profile="https://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Explore a fading world in this adventure written and illustrated by Kyle Schaeffer." />
+	<title>Faded | The Apartment</title>
+	<link rel="stylesheet" href="faded.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="the-apartment.css" type="text/css" media="screen" />
+	<link rel="icon" type="image/png" href="i/favicon.png"/>
+	<link rel="shortcut icon" type="image/ico" href="i/favicon.ico" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="soundmanager2-nodebug-jsmin.js"></script>
+	<script type="text/javascript">
+		soundManager.url = 'audio/swf/';
+		soundManager.flashVersion = 9;
+		soundManager.useFlashBlock = false;
+		soundManager.defaultOptions = {
+			autoLoad: true
+		};
+	</script>
+	<script type="text/javascript" src="faded.js"></script>
+	<script type="text/javascript" src="the-apartment.js"></script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-5789165-1']);
+		_gaq.push(['_trackPageview']);
+		(function(){
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+<body id="the-apartment">
+	<noscript>You'll need to enable JavaScript in order to play this game!</noscript>
+	<div id="fb-root"></div>
+	<script type="text/javascript">
+	window.fbAsyncInit = function(){
+		FB.init({
+			appId: '118543308201832',
+			status: true,
+			cookie: true,
+			xfbml: true
+		});
+	};
+	(function(){
+		var e = document.createElement('script');
+		e.type = 'text/javascript';
+		e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+		e.async = true;
+		document.getElementById('fb-root').appendChild(e);
+	}());
+	</script>
+	<div id="hud">
+		<h1 id="chapter-title" class="static">Chapter One: The Apartment</h1>
+		<ul id="menu" class="static">
+			<li id="menu-help"><a href="#help">Help</a></li>
+			<li id="menu-comments"><a href="#comments">Comments</a></li>
+		</ul>
+		<div id="help" class="fixed hidden menu-pop">
+			<div class="scroller-box">
+				<p>Welcome to <em>Faded</em>, a mystery game designed, developed, and illustrated by <a href="https://kyleschaeffer.com" target="_blank">Kyle Schaeffer</a>.</p>
+				<h4>What do I do?</h4>
+				<p>The game is very simple. Each <em>chapter</em> in the game is a single page. You'll have to examine what you see on the page, interact with things by clicking and typing, and solve puzzles by piecing the clues you find together.</p>
+				<h4>How do I save my progress?</h4>
+				<p>Each chapter has a unique and secret web address (URL). You can save your progress at each chapter by using your browser's &ldquo;bookmark&rdquo; feature.</p>
+			</div>
+		</div>
+		<div id="comments" class="fixed hidden menu-pop">
+			<div class="scroller-box">
+				<p><strong>No one likes a spoiler.</strong> Please refrain from posting any information, URLs, or answers that would compromise anyone's ability to experience the mystery of Faded to its full and original intent. <em>Thank you for your discretion!</em></p>
+				<fb:comments xid="http%3A%2F%2Fkyleschaeffer.com%2Ffaded%2F" url="https://kyleschaeffer.com/faded/" width="480"></fb:comments>
+			</div>
+		</div>
+		<a id="copy" href="https://kyleschaeffer.com" target="_blank">&copy; Kyle Schaeffer</a>
+	</div>
+	<div id="loading">
+		<div id="status-bar"><span id="bar"></span></div>
+	</div>
+	<div id="canvas">
+		<div id="lightbulb" class="static">
+			<a id="lightswitch" href="#lights">Lightswitch</a>
+		</div>
+		<div id="window" class="static">
+			<div id="window-frame" class="static"></div>
+			<div id="window-sky" class="static"></div>
+			<div id="window-cloud" class="animated"></div>
+		</div>
+		<div id="badge" class="static"></div>
+		<div id="letter" class="static">
+			<div class="line i">
+				<span class="c i u"></span><span class="c ii"></span><span class="s"></span><span class="c iii"></span><span class="c iv"></span><span class="c v"></span><span class="s"></span><span class="c vi"></span><span class="c vii"></span><span class="c viii"></span><span class="s"></span><span class="c vii"></span><span class="c viii"></span><span class="c vi"></span><span class="c ix"></span><span class="c i"></span><span class="c x"></span><span class="c xi"></span><span class="s"></span><span class="c xii"></span><span class="c xiii"></span><span class="c i"></span><span class="c xiv"></span><span class="c comma"></span><span class="s"></span><span class="c xii"></span><span class="c xiii"></span><span class="c viii"></span><span class="c x"></span><span class="s"></span><span class="c i u"></span><span class="s"></span><span class="c vi"></span><span class="c xv"></span><span class="s"></span><span class="c ix"></span><span class="c viii"></span><span class="c vi"></span><span class="c ix"></span><span class="c period"></span>
+			</div>
+			<div class="line ii">
+				<span class="c xv u"></span><span class="c iii"></span><span class="s"></span><span class="c x"></span><span class="c vi"></span><span class="c xv"></span><span class="c viii"></span><span class="s"></span><span class="c i"></span><span class="c xiv"></span><span class="s"></span><span class="c xvi u"></span><span class="c iii"></span><span class="c xvii"></span><span class="c viii"></span><span class="s"></span><span class="c xiv u"></span><span class="c xviii"></span><span class="c xiii"></span><span class="c vi"></span><span class="c viii"></span><span class="c ii"></span><span class="c ii"></span><span class="c viii"></span><span class="c vii"></span><span class="c comma"></span><span class="s"></span><span class="c vi"></span><span class="c x"></span><span class="c ix"></span><span class="s"></span><span class="c i u"></span><span class="s"></span><span class="c xiii"></span><span class="c vi"></span><span class="c xix"></span><span class="c viii"></span>
+			</div>
+			<div class="line iii">
+				<span class="c ix"></span><span class="c iv"></span><span class="c x"></span><span class="c viii"></span><span class="s"></span><span class="c vi"></span><span class="s"></span><span class="c xii"></span><span class="c viii"></span><span class="c vii"></span><span class="c vii"></span><span class="c i"></span><span class="c xx"></span><span class="c xvii"></span><span class="c viii"></span><span class="s"></span><span class="c xii"></span><span class="c xiii"></span><span class="c i"></span><span class="c x"></span><span class="c xi"></span><span class="s"></span><span class="c xii"></span><span class="c iv"></span><span class="s"></span><span class="c xii"></span><span class="c xiii"></span><span class="c i"></span><span class="c xiv"></span><span class="s"></span><span class="c xxi"></span><span class="c iv"></span><span class="c vii"></span><span class="c xvii"></span><span class="c ix"></span><span class="c period"></span><span class="s"></span><span class="c i u"></span>
+			</div>
+			<div class="line iv">
+				<span class="c xxi"></span><span class="c vii"></span><span class="c i"></span><span class="c xii"></span><span class="c viii"></span><span class="s"></span><span class="c iv"></span><span class="c x"></span><span class="c xvii"></span><span class="c iii"></span><span class="s"></span><span class="c xx"></span><span class="c viii"></span><span class="c xviii"></span><span class="c vi"></span><span class="c v"></span><span class="c xiv"></span><span class="c viii"></span><span class="s"></span><span class="c xii"></span><span class="c xiii"></span><span class="c viii"></span><span class="c vii"></span><span class="c viii"></span><span class="s"></span><span class="c i"></span><span class="c xiv"></span><span class="s"></span><span class="c iv"></span><span class="c x"></span><span class="c viii"></span><span class="s"></span><span class="c xii"></span><span class="c i"></span><span class="c x"></span><span class="c iii"></span>
+			</div>
+			<div class="line v">
+				<span class="c xx"></span><span class="c viii"></span><span class="c vi"></span><span class="c xviii"></span><span class="c iv"></span><span class="c x"></span><span class="s"></span><span class="c iv"></span><span class="c ii"></span><span class="s"></span><span class="c xiii"></span><span class="c iv"></span><span class="c xxii"></span><span class="c viii"></span><span class="c period"></span><span class="c period"></span><span class="c period"></span><span class="c iv"></span><span class="c x"></span><span class="c viii"></span><span class="s"></span><span class="c xiv"></span><span class="c xvii"></span><span class="c i"></span><span class="c xv"></span><span class="s"></span><span class="c xviii"></span><span class="c xiii"></span><span class="c vi"></span><span class="c x"></span><span class="c xviii"></span><span class="c viii"></span><span class="s"></span><span class="c xii"></span><span class="c iv"></span>
+			</div>
+			<div class="line vi">
+				<span class="c xiv"></span><span class="c xii"></span><span class="c iv"></span><span class="c xxii"></span><span class="s"></span><span class="c xii"></span><span class="c xiii"></span><span class="c i"></span><span class="c xiv"></span><span class="s"></span><span class="c xx"></span><span class="c viii"></span><span class="c vi"></span><span class="c xiv"></span><span class="c xii"></span><span class="s"></span><span class="c i u"></span><span class="s"></span><span class="c xiii"></span><span class="c vi"></span><span class="c xix"></span><span class="c viii"></span><span class="s"></span><span class="c xiv"></span><span class="c iv"></span><span class="s"></span><span class="c x"></span><span class="c vi"></span><span class="c i"></span><span class="c xix"></span><span class="c viii"></span><span class="c xvii"></span><span class="c iii"></span>
+			</div>
+			<div class="line vii">
+				<span class="c xiv"></span><span class="c viii"></span><span class="c xii"></span><span class="s"></span><span class="c i"></span><span class="c x"></span><span class="c xii"></span><span class="c iv"></span><span class="s"></span><span class="c xv"></span><span class="c iv"></span><span class="c xii"></span><span class="c i"></span><span class="c iv"></span><span class="c x"></span><span class="c period"></span><span class="s"></span><span class="c i u"></span><span class="c ii"></span><span class="s"></span><span class="c iii"></span><span class="c iv"></span><span class="c v"></span><span class="s"></span><span class="c vi"></span><span class="c vii"></span><span class="c viii"></span><span class="s"></span><span class="c vii"></span><span class="c viii"></span><span class="c vi"></span><span class="c ix"></span><span class="c i"></span><span class="c x"></span><span class="c xi"></span>
+			</div>
+			<div class="line viii">
+				<span class="c xii"></span><span class="c xiii"></span><span class="c i"></span><span class="c xiv"></span><span class="c comma"></span><span class="s"></span><span class="c xii"></span><span class="c xiii"></span><span class="c viii"></span><span class="c x"></span><span class="s"></span><span class="c i u"></span><span class="s"></span><span class="c xx"></span><span class="c viii"></span><span class="c xi"></span><span class="s"></span><span class="c xii"></span><span class="c xiii"></span><span class="c vi"></span><span class="c xii"></span><span class="s"></span><span class="c iii"></span><span class="c iv"></span><span class="c v"></span><span class="s"></span><span class="c ix"></span><span class="c iv"></span><span class="s"></span><span class="c vi"></span><span class="c xiv"></span><span class="s"></span><span class="c i u"></span>
+			</div>
+			<div class="line ix">
+				<span class="c vi"></span><span class="c xiv"></span><span class="c xvi"></span><span class="c period"></span><span class="c period"></span><span class="c period"></span><span class="c xii"></span><span class="c iv"></span><span class="s"></span><span class="c xxii"></span><span class="c i"></span><span class="c xviii"></span><span class="c xvi"></span><span class="s"></span><span class="c v"></span><span class="c xxii"></span><span class="s"></span><span class="c xxi"></span><span class="c xiii"></span><span class="c viii"></span><span class="c vii"></span><span class="c viii"></span><span class="s"></span><span class="c i u"></span><span class="s"></span><span class="c xiii"></span><span class="c vi"></span><span class="c xix"></span><span class="c viii"></span><span class="s"></span><span class="c ii"></span><span class="c vi"></span><span class="c i"></span><span class="c xvii"></span><span class="c viii"></span><span class="c ix"></span><span class="c period"></span>
+			</div>
+			<div class="line x">
+				<span class="c i u"></span><span class="s"></span><span class="c vi"></span><span class="c xv"></span><span class="s"></span><span class="c xiv"></span><span class="c viii"></span><span class="c vi"></span><span class="c vii"></span><span class="c xviii"></span><span class="c xiii"></span><span class="c i"></span><span class="c x"></span><span class="c xi"></span><span class="s"></span><span class="c ii"></span><span class="c iv"></span><span class="c vii"></span><span class="s"></span><span class="c vi"></span><span class="s"></span><span class="c xiv"></span><span class="c iv"></span><span class="c xvii"></span><span class="c v"></span><span class="c xii"></span><span class="c i"></span><span class="c iv"></span><span class="c x"></span><span class="s"></span><span class="c xii"></span><span class="c iv"></span>
+			</div>
+			<div class="line xi">
+				<span class="c xii"></span><span class="c xiii"></span><span class="c viii"></span><span class="s"></span><span class="c xi"></span><span class="c vii"></span><span class="c viii"></span><span class="c vi"></span><span class="c xii"></span><span class="c viii"></span><span class="c xiv"></span><span class="c xii"></span><span class="s"></span><span class="c xii"></span><span class="c xiii"></span><span class="c vii"></span><span class="c viii"></span><span class="c vi"></span><span class="c xii"></span><span class="s"></span><span class="c xii"></span><span class="c xiii"></span><span class="c i"></span><span class="c xiv"></span><span class="s"></span><span class="c xxi"></span><span class="c iv"></span><span class="c vii"></span><span class="c xvii"></span><span class="c ix"></span><span class="s"></span><span class="c xiii"></span><span class="c vi"></span><span class="c xiv"></span>
+			</div>
+			<div class="line xii">
+				<span class="c viii"></span><span class="c xix"></span><span class="c viii"></span><span class="c vii"></span><span class="s"></span><span class="c xiv"></span><span class="c viii"></span><span class="c viii"></span><span class="c x"></span><span class="c colon"></span><span class="s"></span><span class="c xv u"></span><span class="c viii u"></span><span class="c period"></span>
+			</div>
+			<div class="line xiii">
+				<span class="c ii u"></span><span class="c iv"></span><span class="c xvii"></span><span class="c xvii"></span><span class="c iv"></span><span class="c xxi"></span><span class="s"></span><span class="c i"></span><span class="c x"></span><span class="s"></span><span class="c xv"></span><span class="c iii"></span><span class="s"></span><span class="c ii"></span><span class="c iv"></span><span class="c iv"></span><span class="c xii"></span><span class="c xiv"></span><span class="c xii"></span><span class="c viii"></span><span class="c xxii"></span><span class="c xiv"></span><span class="c period"></span><span class="s"></span><span class="c xv u"></span><span class="c iii"></span><span class="s"></span><span class="c x"></span><span class="c viii"></span><span class="c xxiii"></span><span class="c xii"></span>
+			</div>
+			<div class="line xiv">
+				<span class="c xiv"></span><span class="c xii"></span><span class="c iv"></span><span class="c xxii"></span><span class="s"></span><span class="c i"></span><span class="c xiv"></span><span class="s"></span><span class="c xii"></span><span class="c xiii"></span><span class="c viii"></span><span class="s"></span><span class="c xvii"></span><span class="c vi"></span><span class="c xx"></span><span class="s"></span><span class="c vi"></span><span class="c xii"></span><span class="s"></span><span class="c a6"></span><span class="c a1"></span><span class="c a8"></span><span class="s"></span><span class="c xiii u"></span><span class="c vi"></span><span class="c vii"></span><span class="c vii"></span><span class="c i"></span><span class="c xiv"></span><span class="c iv"></span><span class="c x"></span><span class="c period"></span>
+			</div>
+		</div>
+		<div id="cypher" class="static fade-on-small">
+			<input maxlength="1" id="key-i" type="text" />
+			<input maxlength="1" id="key-ii" type="text" />
+			<input maxlength="1" id="key-iii" type="text" />
+			<input maxlength="1" id="key-iv" type="text" />
+			<input maxlength="1" id="key-v" type="text" />
+			<input maxlength="1" id="key-vi" type="text" />
+			<input maxlength="1" id="key-vii" type="text" />
+			<input maxlength="1" id="key-viii" type="text" />
+			<input maxlength="1" id="key-ix" type="text" />
+			<input maxlength="1" id="key-x" type="text" />
+			<input maxlength="1" id="key-xi" type="text" />
+			<input maxlength="1" id="key-xii" type="text" />
+			<input maxlength="1" id="key-xiv" type="text" />
+			<input maxlength="1" id="key-xv" type="text" />
+			<input maxlength="1" id="key-xvi" type="text" />
+			<input maxlength="1" id="key-xvii" type="text" />
+			<input maxlength="1" id="key-xiii" type="text" />
+			<input maxlength="1" id="key-xviii" type="text" />
+			<input maxlength="1" id="key-xix" type="text" />
+			<input maxlength="1" id="key-xx" type="text" />
+			<input maxlength="1" id="key-xxi" type="text" />
+			<input maxlength="1" id="key-xxii" type="text" />
+			<input maxlength="1" id="key-xxiii" type="text" />
+		</div>
+		<div id="dark" class="static hidden">
+			<div id="dark-chart" class="static hidden"></div>
+			<div id="dark-diagram" class="static hidden"></div>
+			<div id="dark-equals" class="static hidden"></div>
+			<div id="dark-mystery" class="static hidden"></div>
+			<div id="dark-ratio" class="static hidden"></div>
+			<div id="dark-sequence" class="static hidden"></div>
+			<div id="dark-villain" class="static hidden"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,361 @@
+/*
+Theme Name: Shake Six
+Theme URI: https://kyleschaeffer.com
+Author: Kyle Schaeffer
+Author URI: https://kyleschaeffer.com
+Description: Sweet new theme for KyleSchaeffer.com. Aww yeah!
+Version: 1.0
+*/
+
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+	
+/* style */
+body {
+	background: #fff;
+	color: #555;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 15px;
+	line-height: 1.5;
+}
+a {
+	color: #4cacc7;
+	text-decoration: underline;
+	transition: color 0.25s ease;
+}
+a:hover, a:focus, a:active {
+	color: #3ca0bc;
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.1;
+	font-weight: 700;
+	color: #222;
+	margin: 1em 0 0.25em 0;
+}
+h1 {
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size: 3em;
+	font-weight: 200;
+}
+h2 {
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: 200;
+}
+h3 {
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	font-weight: 200;
+}
+h4 {
+	font-size: 1.25em;
+}
+h5 {
+	font-size: 1.125em;
+}
+h6 {
+	font-size: 1em;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: #222;
+	text-decoration: none;
+}
+p {
+	margin: 0 0 1.5em 0;
+	text-align: justify;
+}
+ol, ul {
+	margin: 0 2.5em 1.5em 2.5em;
+	padding: 0;
+}
+ul {
+	list-style-type: square;
+}
+li {
+	margin: 0 0 1em 0;
+}
+strong {
+	color: #222;
+}
+strike {
+	color: #bbb;
+}
+code {
+	background: #f9f9f9;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+pre {
+	margin: 0 0 1.5em 0;
+	padding: 1.5em;
+	background: #f9f9f9;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+blockquote {
+	margin-left: 5em;
+	margin-right: 2.5em;
+	font-style: italic;
+}
+blockquote:before {
+	content: "\201C";
+	position: absolute;
+	color: #eee;
+	font-size: 5em;
+	margin-left: -0.6em;
+	margin-top: -0.3em;
+}
+img, embed, video, audio, iframe {
+	max-width: 100%;
+}
+
+/* utility */
+.alignleft {
+	float: left;
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
+}
+.alignright {
+	float: right;
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+.aligncenter {
+	text-align: center;
+}
+.row:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 1.5em;
+}
+.video-container iframe, .video-container object, .video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* header */
+.header {
+	text-align: center;
+	padding: 15px 0 19px;
+	background: #4cacc7 url(shake-down.png) bottom repeat-x;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight: 200;
+}
+.header h2 {
+	display: inline-block;
+	margin: 0;
+	vertical-align: middle;
+	font-size: 32px;
+}
+.header img {
+	display: block;
+	height: 1em;
+}
+.header a, .header a img {
+	opacity: 0.75;
+	transition: opacity 0.25s ease;
+}
+.header .current-menu-item a, body.home .header h2 a img, .header a:hover, .header a:focus, .header a:hover img, .header a:focus img {
+	opacity: 1;
+}
+
+/* nav */
+.nav {
+	display: inline-block;
+	vertical-align: middle;
+}
+.nav a {
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
+}
+.nav a:hover, .nav a:focus {
+	color: #fff;
+}
+.nav ul {
+	margin: 0;
+	list-style: none;
+}
+.nav li {
+	margin: 0 0 0 1.25em;
+	display: inline;
+}
+
+/* content */
+.content {
+	width: 95%;
+	max-width: 45em;
+	margin: 4em auto;
+}
+.card {
+	padding: 5em;
+	margin: 2em 0;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.card h1 {
+	margin: 0;
+}
+.entry {
+	margin: 0 0 4em 0;
+}
+.entry.excerpt {
+	margin: 0;
+}
+.entry-meta {
+	color: #999;
+	font-style: italic;
+}
+
+/* paging */
+.paging {
+	padding: 1em 0;
+	border-top: 0.25em dotted #eee;
+}
+.paging > div {
+	margin: 0;
+}
+
+/* comments */
+.comments-list, .comments-list ul {
+	margin: 0;
+	list-style: none;
+}
+.comment, .pingback {
+	margin: 2em 0;
+	padding-left: 64px;
+	word-wrap: break-word;
+}
+.comment .comment .comment .comment {
+	margin-left: -64px;
+}
+.pingback {
+	padding-left: 0;
+}
+.comment-author img {
+	float: left;
+	vertical-align: top;
+	margin-left: -64px;
+	border: 3px solid #fff;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.comment-author .says {
+	display: none;
+}
+.comment-author cite {
+	color: #222;
+	font-weight: bold;
+	font-style: italic;
+}
+.comment-author cite a {
+	color: #222;
+}
+.comment-meta {
+	font-size: 0.875em;
+	font-style: italic;
+	color: #999;
+}
+.comment-meta a {
+	color: #999;
+	text-decoration: none;
+}
+
+/* forms */
+.required {
+	color: #4cacc7;
+}
+.comment-notes {
+	color: #999;
+	font-style: italic;
+}
+label[for] {
+	display: block;
+	margin: 1em 0 0.25em 0;
+	color: #222;
+	cursor: pointer;
+}
+input, textarea, button {
+	padding: 1em;
+	border: 0px solid #222;
+	border-bottom-width: 0.25em;
+	background: #f9f9f9;
+	width: 100%;
+	outline: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+input:focus, textarea:focus {
+	border-color: #4cacc7;
+	background-color: #fff;
+}
+input[type=checkbox], input[type=radio] {
+	width: auto;
+}
+input[type=checkbox] + label[for], input[type=radio] + label[for] {
+	display: inline;
+}
+input[type=submit], input[type=button], button {
+	border: 0;
+	background: #4cacc7;
+	border-bottom: 0.25em solid #2d7c91;
+	color: #fff;
+	font-size: 1.25em;
+	width: auto;
+}
+input[type=submit]:active, input[type=button]:active, button:active {
+	border-bottom-width: 0;
+	border-top: 0.25em solid #fff;
+	vertical-align: bottom;
+}
+.cscfForm .control-group {
+	margin-bottom: 1em;
+}
+.cscfForm .help-inline {
+	float: right;
+	color: #4cacc7;
+	font-size: 0.875em;
+}
+
+/* footer */
+.footer {
+	width: 95%;
+	max-width: 45em;
+	margin: 2em auto;
+	padding: 2em 0 0;
+	color: #aaa;
+	font-style: italic;
+	text-align: center;
+	border-top: 1px solid #eee;
+}
+
+@media screen and (min-width: 80em) {
+	body {
+		font-size: 18px;
+	}
+	pre, .card {
+		margin-left: -7.5em;
+		margin-right: -7.5em;
+	}
+	.alignleft {
+		margin-left: -7.5em;
+	}
+	.alignright {
+		margin-right: -7.5em;
+	}
+}
+@media screen and (min-width: 40em) {
+	.comment .comment .comment .comment {
+		margin-left: 0;
+	}
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml" dir="ltr" lang="en-US">
+<head profile="https://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Explore a fading world in this adventure written and illustrated by Kyle Schaeffer." />
+	<meta name="robots" content="noindex" />
+	<title>Faded | The University</title>
+	<link rel="stylesheet" href="faded.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="the-university.css" type="text/css" media="screen" />
+	<link rel="icon" type="image/png" href="i/favicon.png"/>
+	<link rel="shortcut icon" type="image/ico" href="i/favicon.ico" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="soundmanager2-nodebug-jsmin.js"></script>
+	<script type="text/javascript">
+		soundManager.url = 'audio/swf/';
+		soundManager.flashVersion = 9;
+		soundManager.useFlashBlock = false;
+		soundManager.defaultOptions = {
+			autoLoad: true
+		};
+	</script>
+	<script type="text/javascript" src="faded.js"></script>
+	<script type="text/javascript" src="the-university.js"></script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-5789165-1']);
+		_gaq.push(['_trackPageview']);
+		(function(){
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+<body id="the-university">
+	<noscript>You'll need to enable JavaScript in order to play this game!</noscript>
+	<div id="fb-root"></div>
+	<script type="text/javascript">
+	window.fbAsyncInit = function(){
+		FB.init({
+			appId: '118543308201832',
+			status: true,
+			cookie: true,
+			xfbml: true
+		});
+	};
+	(function(){
+		var e = document.createElement('script');
+		e.type = 'text/javascript';
+		e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+		e.async = true;
+		document.getElementById('fb-root').appendChild(e);
+	}());
+	</script>
+	<div id="hud">
+		<h1 id="chapter-title" class="static">Chapter Three: The University</h1>
+		<ul id="menu" class="static">
+			<li id="menu-bookmark"><a href="#bookmark">Bookmark</a></li>
+			<li id="menu-history"><a href="#history">History</a></li>
+			<li id="menu-help"><a href="#help">Help</a></li>
+			<li id="menu-comments"><a href="#comments">Comments</a></li>
+		</ul>
+		<div id="bookmark" class="fixed hidden menu-pop">
+			<div class="scroller-box">
+				<h4>Ding!</h4>
+				<p>You've reached a new chapter in the story. Be sure to <strong>bookmark</strong> this page in order to save your progress.</p>
+				<hr/>
+				<p class="achievement"><img src="i/achievement-alkali.png" alt="The Alkali" /></p>
+				<h4>Achievement</h4>
+				<p>Copy and paste the following HTML to share this on your profile, website, or blog.</p>
+				<textarea id="achieve">&lt;iframe src=&quot;https://kyleschaeffer.com/faded/achievement-alkali.html&quot; width=&quot;75&quot; height=&quot;100&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;p&gt;I recovered the &lt;a href=&quot;https://kyleschaeffer.com/faded/&quot;&gt;Alkali&lt;/a&gt;.&lt;/p&gt;</textarea>
+			</div>
+		</div>
+		<div id="history" class="fixed hidden menu-pop">
+			<div class="scroller-box">
+				<h4>Previous Chapters</h4>
+				<p>You may choose to go back to previous chapters in order to gather clues, hints, and other information.</p>
+				<ul>
+					<li><a href="/faded/">Chapter One: The Apartment</a></li>
+					<li><a href="/faded/the-lab-at-618-harrison.html">Chapter Two: The Lab</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="help" class="fixed hidden menu-pop">
+			<div class="scroller-box">
+				<p>Welcome to <em>Faded</em>, a mystery game designed, developed, and illustrated by <a href="https://kyleschaeffer.com" target="_blank">Kyle Schaeffer</a>.</p>
+				<h4>What do I do?</h4>
+				<p>The game is very simple. Each <em>chapter</em> in the game is a single page. You'll have to examine what you see on the page, interact with things by clicking and typing, and solve puzzles by piecing the clues you find together.</p>
+				<h4>How do I save my progress?</h4>
+				<p>Each chapter has a unique and secret web address (URL). You can save your progress at each chapter by using your browser's &ldquo;bookmark&rdquo; feature.</p>
+			</div>
+		</div>
+		<div id="comments" class="fixed hidden menu-pop">
+			<div class="scroller-box">
+				<p><strong>No one likes a spoiler.</strong> Please refrain from posting any information, URLs, or answers that would compromise anyone's ability to experience the mystery of Faded to its full and original intent. <em>Thank you for your discretion!</em></p>
+				<fb:comments xid="http%3A%2F%2Fkyleschaeffer.com%2Ffaded%2F" url="https://kyleschaeffer.com/faded/" width="480"></fb:comments>
+			</div>
+		</div>
+		<a id="copy" href="https://kyleschaeffer.com" target="_blank">&copy; Kyle Schaeffer</a>
+	</div>
+	<div id="loading">
+		<div id="status-bar"><span id="bar"></span></div>
+	</div>
+	<div id="canvas">
+		<div class="to-be-continued-wrap static">
+			<div class="to-be-continued">To be continued...</div>
+			<div class="to-be-continued-description">Please be sure to <strong>bookmark</strong> this page in order to save your progress! Also feel free to sign up for the <em>Faded Newsletter</em> to get email updates when new chapters become available.</div>
+			<div class="to-be-continued-newsletter">
+				<form action="https://kyleschaeffer.us2.list-manage.com/subscribe/post?u=52f53f851550022dbe1a03e48&amp;id=c8656e1e10" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+					<div class="form-label"><label for="mce-EMAIL">Email Address </label></div>
+					<div class="form-field"><input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL"></div>
+					<div class="form-actions"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

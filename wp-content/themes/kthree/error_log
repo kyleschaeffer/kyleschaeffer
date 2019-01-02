@@ -1,0 +1,1 @@
+[17-Jan-2011 19:51:40] PHP Fatal error:  Call to undefined function  get_header() in /home2/kylescha/public_html/wordpress/wp-content/themes/kthree/index.php on line 1
