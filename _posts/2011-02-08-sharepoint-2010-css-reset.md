@@ -60,6 +60,8 @@ jQuery('#css-reset-box').val(theNewScript);
 });</script>
 <style type="text/css">.color-field{width:45%;margin:0 5% 0 0;float:left;}.color-field label.field-label{font-size:0.85em;font-weight:bold;}.color-field input{margin:0 0 0.75em 0;}.color-action{clear:both;padding: 0.75em 0 0 0;border-top:1px #ddd dashed;}#css-reset-box{display:block;height:30em;font-family:Courier,'Courier New',monospace;margin:1em 0 0 0;}</style>
 
+---
+
 ## Usage Guidelines
 
 It’s best to place this code at the _top_ of an external CSS style sheet that is attached to your SharePoint 2010 master page. The external CSS file should be loaded _after_ the **corev4.css** file, which is where the vast majority of these styles originate from.

@@ -43,9 +43,7 @@ The same holds true in the world of interactive design. Not all interfaces are c
 
 A fantastic tool that can be used to create consistency is the user persona. These simple documents personify the users of a system, and can even be printed and distributed as a constant reminder of the message, the goals, the users, and the emotional tone of a project. Aarron Walter, author of _[Designing For Emotion](http://www.abookapart.com/products/designing-for-emotion)_, offers a [fantastic template for design personas](http://aarronwalter.com/design-personas/) to help begin this process.
 
-Furthermore, I go so far as to print these personas out. I affix them to the walls near the team I’m working with, and I tell everyone to look at them every single day. With every feature and component that we build, we should look to the personas and ask ourselves, “Does this fit the emotional tone of the project?” “Does this fit our users?” These are important questions to ask, and all too easy to forget._
-
-_
+Furthermore, I go so far as to print these personas out. I affix them to the walls near the team I’m working with, and I tell everyone to look at them every single day. With every feature and component that we build, we should look to the personas and ask ourselves, “Does this fit the emotional tone of the project?” “Does this fit our users?” These are important questions to ask, and all too easy to forget.
 
 ### Communicating Clearly
 

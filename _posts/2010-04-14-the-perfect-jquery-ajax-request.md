@@ -104,6 +104,8 @@ In this case, I’m loading my site’s RSS feed into a `<div/>` with an ID of `
 <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=1.10.2'></script>
 <script type="text/javascript" src="/assets/js/the-perfect-ajax.js"></script>
 
+---
+
 ### Data Types
 
 We’re loading an RSS feed in this example, so the AJAX function is designed to interpret XML data. jQuery AJAX also understands a number of other data formats, such as HTML, plain text, and even JSON. Find out more about data types at the [jQuery AJAX documentation page](https://api.jquery.com/jQuery.ajax/).

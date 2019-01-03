@@ -1,12 +1,25 @@
 .banner {
   background: $primary;
-  height: 250px;
+  height: 100px;
   position: relative;
+
+  @include mq-up($screen-sm) {
+    height: 150px;
+  }
+
+  @include mq-up($screen-md) {
+    height: 200px;
+  }
+
+  @include mq-up($screen-lg) {
+    height: 250px;
+  }
 }
 
 #lights {
   height: 100%;
   left: 0;
+  margin: 0;
   position: absolute;
   top: 0;
   width: 100%;
@@ -16,30 +29,45 @@
 .brand {
   bottom: 0;
   color: $white;
+  display: block;
   font-family: $font-head;
-  font-size: 90px;
+  font-size: 38px;
   font-weight: $wx;
-  left: 0;
+  left: 50%;
   letter-spacing: -.045em;
-  line-height: 68px;
+  line-height: .75em;
+  margin-left: -4.1em;
   overflow: hidden;
   position: absolute;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
-  width: 100%;
+  width: 8.2em;
   z-index: 2;
 
   &:hover,
   &:focus {
     color: $white;
   }
+
+  @include mq-up($screen-sm) {
+    font-size: 70px;
+  }
+
+  @include mq-up($screen-md) {
+    font-size: 95px;
+  }
+
+  @include mq-up($screen-lg) {
+    font-size: 140px;
+  }
 }
 
 .tagline {
   color: $white;
   display: block;
+  font-size: .8em;
   font-weight: $wl;
   left: 0;
   line-height: $s;
@@ -48,4 +76,8 @@
   top: 33%;
   width: 100%;
   z-index: 2;
+
+  @include mq-up($screen-sm) {
+    font-size: 1em;
+  }
 }

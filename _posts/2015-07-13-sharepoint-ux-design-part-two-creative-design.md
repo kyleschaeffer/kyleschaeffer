@@ -19,6 +19,6 @@ This is the second video in a multi-part series in which designer Kyle Schaeffer
 
 This video was published by [Old River Creative](http://oldrivercreative.com/blog/sharepoint-ux-design-part-two-creative-design).
 
-<div class="video-container">
+<div class="video-container focus">
   <iframe src="https://www.youtube.com/embed/BuVjgqmcf1g" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 </div>

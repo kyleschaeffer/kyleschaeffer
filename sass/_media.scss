@@ -7,9 +7,47 @@ canvas {
   max-width: 100%;
 }
 
+canvas,
+.img-center img {
+  display: block;
+  margin: $hh auto;
+}
+
+.img-wide img {
+  display: block;
+  margin: $hh auto;
+  width: 100%;
+}
+
+.img-left {
+  float: left;
+  margin: 0 $h $h 0;
+
+  @include mq-up($screen-md) {
+    margin: 0 $hh $hh 0;
+  }
+}
+
+.img-thumb {
+  max-width: 150px;
+
+  @include mq-up($screen-md) {
+    max-width: 300px;
+  }
+}
+
+.img-right {
+  float: right;
+  margin: 0 0 $h $h;
+
+  @include mq-up($screen-md) {
+    margin: 0 0 $hh $hh;
+  }
+}
+
 .video-container {
   height: 0;
-  margin-bottom: 1.5em;
+  margin: $hh 0;
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;

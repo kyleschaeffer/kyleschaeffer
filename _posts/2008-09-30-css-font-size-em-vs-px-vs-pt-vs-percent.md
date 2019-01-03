@@ -26,6 +26,7 @@ One of the most confusing aspects of CSS styling is the application of the **fon
 
 It’s easy to understand the difference between font-size units when you see them in action. Generally, **1em = 12pt = 16px = 100%**. When using these font-sizes, let’s see what happens when you increase the base font size (using the body CSS selector) from 100% to 120%.
 
+{:.img-center}
 ![Font-sizes as they increase from 100% to 120%.](/assets/img/font-size-1.gif)
 
 As you can see, both the em and percent units get larger as the base font-size increases, but pixels and points do not. It can be easy to set an absolute size for your text, but it’s much easier on your visitors to use scalable text that can display on any device or any machine. For this reason, the em and percent units are preferred for web document text.
@@ -36,6 +37,7 @@ We’ve decided that point and pixel units are not necessarily best suited for w
 
 In the example above, we used the percent unit as our base font-size (on the body tag). **If you change your base font-size from percent to ems** (i.e. **body { font-size: 1em; }**), you _probably_ won’t notice a difference. Let’s see what happens when “1em” is our body font-size, and when the client alters the “Text Size” setting of their browser (this is available in some browsers, such as Internet Explorer).
 
+{:.img-center}
 ![Font-size as the client changes the text size in their browser.](/assets/img/font-size-2.gif)
 
 When the client’s browser text size is set to “medium,” there is no difference between ems and percent. When the setting is altered, however, the difference is quite large. On the “Smallest” setting, ems are much smaller than percent, and when on the “Largest” setting, it’s quite the opposite, with ems displaying much larger than percent. While some could argue that the em units are scaling as they are truly intended, in practical application, the em text scales too abruptly, with the smallest text becoming hardly legible on some client machines.

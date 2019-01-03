@@ -1,8 +1,23 @@
-.container {
-  margin: auto;
-  max-width: 45rem;
+.main {
+  padding: $h;
+
+  @include mq-up($screen-sm) {
+    padding: $hh $h;
+  }
+
+  @include mq-up($screen-md) {
+    padding: $hh*2 0;
+  }
 }
 
-.main {
-  padding: $hh * 2 0;
+.container {
+  margin: auto;
+
+  @include mq-up($screen-md) {
+    max-width: $container-md;
+  }
+
+  @include mq-up($screen-lg) {
+    max-width: $container-lg;
+  }
 }

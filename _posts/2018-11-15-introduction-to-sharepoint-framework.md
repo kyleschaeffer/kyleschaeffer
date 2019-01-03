@@ -17,6 +17,6 @@ I’m excited to announce a new online class I’ve been working on and recordin
 
 This is a great way to learn modern SharePoint development, and it represents the first of many educational training products that I’ll be working on throughout the next several months. Sign up for a student account or a free trial to begin at [sharepointfx.io](https://sharepointfx.io/).
 
-<div class="video-container">
+<div class="video-container focus">
   <iframe width="500" height="281" src="https://www.youtube.com/embed/videoseries?list=PLuUEhNt_aNQOIONMYDaDYZnY3vQA9SGlW" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 </div>

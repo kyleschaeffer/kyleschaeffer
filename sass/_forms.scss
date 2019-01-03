@@ -1,0 +1,47 @@
+// Buttons
+button,
+input[type="button"] {
+  background: $primary;
+  border-radius: $r;
+  border: 0;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: $hc;
+  margin: 0;
+  padding: .8em 1.2em;
+  transition: background-color $t ease;
+
+  &:hover,
+  &:focus {
+    background-color: darken($primary, 3%);
+  }
+}
+
+// Inputs
+input,
+textarea,
+select {
+  background: $lighter;
+  border-radius: $r;
+  border: 1px solid $light;
+  color: $darker;
+  font-family: inherit;
+  font-size: inherit;
+  height: 50px;
+  line-height: $hc;
+  padding: 0 1.2em;
+}
+
+input[type="checkbox"] {
+  height: auto;
+}
+
+textarea {
+  display: block;
+  line-height: $h;
+  resize: vertical;
+  width: 100%;
+}

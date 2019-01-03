@@ -19,6 +19,6 @@ This is the first of several posts in a video series detailing the SharePoint us
 
 This video was published by [Old River Creative](http://oldrivercreative.com/blog/sharepoint-ux-design-part-one-wireframes).
 
-<div class="video-container">
+<div class="video-container focus">
   <iframe src="https://www.youtube.com/embed/Qbk2y4uvI94" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 </div>

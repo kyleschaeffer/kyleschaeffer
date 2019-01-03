@@ -13,6 +13,6 @@ In this introduction to SharePoint Engineer, author Kyle Schaeffer demonstrates 
 
 This video was published by [Old River Creative](https://oldrivercreative.com/blog/introducing-sharepoint-engineer).
 
-<div class="video-container">
+<div class="video-container focus">
   <iframe src="https://www.youtube.com/embed/yNjq8_1fqN8" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 </div>

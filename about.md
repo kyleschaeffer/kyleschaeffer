@@ -7,9 +7,7 @@ layout: page
 guid: http://www.kyleschaeffer.com/?page_id=6
 permalink: /about
 ---
-![Kyle Schaeffer](/assets/img/Kyle-Beard-Headshot.jpg)
-
-I build apps and occasionally grow a beard. I like music, good books, and spending time in the great outdoors with my family.
+![Kyle Schaeffer](/assets/img/Kyle-Beard-Headshot.jpg){:.img-right.img-thumb}I build apps and occasionally grow a beard. I like music, good books, and spending time in the great outdoors with my family.
 
 I have been designing and building software for nearly two decades. I find this type of development to be an ideal medium in which elements of both art and technology can collide. These disparate disciplines allow me to practice both sides of my brain, to create and implement ideas in a rapidly changing environment that reinvents itself every few years.
 

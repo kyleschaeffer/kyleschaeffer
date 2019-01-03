@@ -27,9 +27,7 @@ The browser window is a fairly simple application: an address/search bar, a few 
 
 ### Example: Microsoft SharePoint 2010
 
-![Microsoft SharePoint 2010](/assets/img/sharepoint-2010.jpg)
-
-One of the most preposterous features of an interface that I’ve seen is SharePoint 2010’s new ribbon interface. The default SharePoint 2010 interface includes a simple CSS style that disables the scrollbar on the `<body>` element. Microsoft chooses to remedy this by adding a scrollbar to other division elements in the interface instead. This results in a fairly impressive “fixed” ribbon, but it has some infuriating side-effects.
+![Microsoft SharePoint 2010](/assets/img/sharepoint-2010.jpg){:.img-right.img-thumb}One of the most preposterous features of an interface that I’ve seen is SharePoint 2010’s new ribbon interface. The default SharePoint 2010 interface includes a simple CSS style that disables the scrollbar on the `<body>` element. Microsoft chooses to remedy this by adding a scrollbar to other division elements in the interface instead. This results in a fairly impressive “fixed” ribbon, but it has some infuriating side-effects.
 
 * When a SharePoint 2010 page loads, users will not be able to scroll until all JavaScript has loaded.  On slow servers or on large pages, this can take up to 2-3 seconds, which can be quite infuriating.
 * Some devices don’t execute the JavaScript in the expected fashion, resulting in the complete inability to scroll on mobile devices and tablets.
@@ -44,6 +42,7 @@ Forms are a fairly standard feature of the web. Users see them and use them all 
 
 ### Example: The Form Resubmission Prompt
 
+{:.img-center}
 ![Form Resubmission](/assets/img/form-resubmission.jpg)
 
 This is Google Chrome’s form resubmission prompt. Most browsers have something very similar. This appears when users click on the “Back” and “Forward” buttons in the browser, or when they “Refresh” a page on which they have submitted a form. As web junkies, we might know what this means, but it has a more elusive meaning to your every-day internet users. Most of the time, you’ll find that users simply click the default option (in this case, “Continue”), which can lead to duplication of orders, data, requests, and all sorts of things that would be better off if avoided. Also, it’s just another annoying prompt that users encounter while they’re using your site.
@@ -73,9 +72,7 @@ This receiving script never actually displays anything in the browser window. In
 
 ## 3. Never disable keyboard support
 
-![Sprint Sign-In](/assets/img/sprint-sign-in.jpg)
-
-While we’re on the topic of forms, let’s look at another deviation from web standards you’ll want to avoid. Here, you’ll see a screenshot of the login form at [mysprint.sprint.com](http://mysprint.sprint.com). I have a Sprint mobile phone, and I occasionally use this login form to sign in and review my account, see my bill, or (more commonly) daydream about all the fancy new mobile phones that I don’t have.
+![Sprint Sign-In](/assets/img/sprint-sign-in.jpg){:.img-right.img-thumb}While we’re on the topic of forms, let’s look at another deviation from web standards you’ll want to avoid. Here, you’ll see a screenshot of the login form at [mysprint.sprint.com](http://mysprint.sprint.com). I have a Sprint mobile phone, and I occasionally use this login form to sign in and review my account, see my bill, or (more commonly) daydream about all the fancy new mobile phones that I don’t have.
 
 ### What went wrong
 
@@ -89,9 +86,7 @@ Feedback is important, especially if you’re working with the awesomeness of AJ
 
 ### Example: Facebook
 
-![Facebook - Add Favorite](/assets/img/facebook-add-favorites.jpg)
-
-There’s an easy way to test this: visit a web page, turn off your wireless adapter, and then click on things and see what happens. Obviously, because you’re not online, anything you do should be very obviously followed by a “no connection” message or some sort of indication that you’ve failed to do something. Facebook, a website that makes gratuitous use of AJAX for interaction, is not so good about warning users when things have failed.
+![Facebook - Add Favorite](/assets/img/facebook-add-favorites.jpg){:.img-right.img-thumb}There’s an easy way to test this: visit a web page, turn off your wireless adapter, and then click on things and see what happens. Obviously, because you’re not online, anything you do should be very obviously followed by a “no connection” message or some sort of indication that you’ve failed to do something. Facebook, a website that makes gratuitous use of AJAX for interaction, is not so good about warning users when things have failed.
 
 **Editor’s note:** yes, I am using pirate Facebook.
 
@@ -103,9 +98,7 @@ Different strokes for different folks. That’s a saying that I like to spew off
 
 ### Example: No, I don’t want to search
 
-![eBay Auto-focus](/assets/img/ebay-search.jpg)
-
-I’m going to use eBay as an example, just because they’re so big, but many websites _out there_ are guilty of this annoyance. Upon arriving at eBay’s website, they use JavaScript to auto-focus on the search bar. I guess they’ve already decided, before you even visit, that you want to search their website. For some users, however, this can be incredibly annoying. A common and simple way to scroll down the page, in all browsers, is to press the space key. Pressing this key will advance the screen about one page, so you can continue reading without having to worry about scroll bars and the like. If you’re auto-focused on a search box, however, it disables your ability to do this. Even if it’s only a minor annoyance, it can be incredibly frustrating to users who like to navigate in this fashion. Likewise, I often use the backspace key instead of the back button to go back when I didn’t find what I was looking for. With the focus on a search field, backspace navigation simply doesn’t work.
+![eBay Auto-focus](/assets/img/ebay-search.jpg){:.img-right.img-thumb}I’m going to use eBay as an example, just because they’re so big, but many websites _out there_ are guilty of this annoyance. Upon arriving at eBay’s website, they use JavaScript to auto-focus on the search bar. I guess they’ve already decided, before you even visit, that you want to search their website. For some users, however, this can be incredibly annoying. A common and simple way to scroll down the page, in all browsers, is to press the space key. Pressing this key will advance the screen about one page, so you can continue reading without having to worry about scroll bars and the like. If you’re auto-focused on a search box, however, it disables your ability to do this. Even if it’s only a minor annoyance, it can be incredibly frustrating to users who like to navigate in this fashion. Likewise, I often use the backspace key instead of the back button to go back when I didn’t find what I was looking for. With the focus on a search field, backspace navigation simply doesn’t work.
 
 The fix for this one is easy: don’t do it. It’s annoying.
 
@@ -115,6 +108,7 @@ Websites can be so damn sneaky. I guess they need to make a buck, but who doesn�
 
 ### Example: Digg.com
 
+{:.img-center}
 ![Digg Advertisement](/assets/img/digg-advertisement.jpg)
 
 While the quality of Digg’s content is another concern, one thing that does drive me crazy is the sponsored links that appear in the rollup. Notice the promotion from NewEgg.com. This link does not actually appear on page load, but rather when users hover their mouse cursor into the rollup of popular stories. This means that if you’re a fast clicker (aren’t we all?), you will often accidentally click on the advertisement instead of the story you’re interested in. Good for Digg, bad for users. Stop being so shifty, internet.
@@ -125,6 +119,7 @@ A “fixed” element in the browser window is one that stays on the screen, eve
 
 ### Example: Pandora.com
 
+{:.img-center}
 ![Pandora Fixed](/assets/img/pandora-fixed-nav.jpg)
 
 This is a screenshot of Pandora’s fancy new HTML5/CSS3 design. First of all, I’ll say that I love Pandora.  Maybe too much. It’s pretty awesome, and it even lets me give all of my radio stations quirky little names like “Harmonizatorasaurous” (eat that, spell-check).
@@ -162,9 +157,7 @@ Do I really even have to mention this one? I thought that pop-ups were notorious
 
 ### Example: TinyMCE
 
-![TinyMCE](/assets/img/tinymce.jpg)
-
-I never use pop-ups. I always recommend against them. A common excuse is that _your_ site should stay open, in it’s own tab, even if users click a link that takes them away from your site. I’ve got a simple response to that: wrong! Don’t let your head grow so big that you think your website is god’s gift to the internet. Users have gotten pretty comfortable with the idea of tabbed browsing, and they know how to manage their windows. Unless you’re Google, you’re not allowed to use pop-ups. It’s that simple.
+![TinyMCE](/assets/img/tinymce.jpg){:.img-right}I never use pop-ups. I always recommend against them. A common excuse is that _your_ site should stay open, in it’s own tab, even if users click a link that takes them away from your site. I’ve got a simple response to that: wrong! Don’t let your head grow so big that you think your website is god’s gift to the internet. Users have gotten pretty comfortable with the idea of tabbed browsing, and they know how to manage their windows. Unless you’re Google, you’re not allowed to use pop-ups. It’s that simple.
 
 Imagine my surprise when I attempted to implement the TinyMCE JavaScript editor into a web application I was building, and realized it still used pop-up windows for things like links and images. I am building a PHP application, and I have had stars in my eyes for WordPress the entire time, so TinyMCE was the obvious choice. I was so taken aback by this behavior that I ended up switching to CKEditor, another popular editor that has recognized the need to rid the world of these annoying little boxes, and I’m all the happier for it.
 
@@ -174,9 +167,7 @@ I love websites that are different, but not _too_ different. There’s a fine b
 
 ### Example: Sony.com
 
-![Sony](/assets/img/sony.jpg)
-
-Check out [Sony.com](http://www.sony.com), and you’ll realize that a full 5-8 seconds will go by before you actually see anything on the screen that you can click on. Almost the entire site is in Flash, and it breaks about five of the ten “don’t do’s” that I’ve described in this article. All that aside, Sony has provided a non-Flash version of their site, which also subsequently presents a loading spinner for about 2-3 seconds that covers all of the content on the page. I’m not entirely sure why the designer who created the Sony website was so fond of things that come between users and consuming the content they came to read, but I do know this: it’s annoying. Don’t do it.
+![Sony](/assets/img/sony.jpg){:.img-right.img-thumb}Check out [Sony.com](http://www.sony.com), and you’ll realize that a full 5-8 seconds will go by before you actually see anything on the screen that you can click on. Almost the entire site is in Flash, and it breaks about five of the ten “don’t do’s” that I’ve described in this article. All that aside, Sony has provided a non-Flash version of their site, which also subsequently presents a loading spinner for about 2-3 seconds that covers all of the content on the page. I’m not entirely sure why the designer who created the Sony website was so fond of things that come between users and consuming the content they came to read, but I do know this: it’s annoying. Don’t do it.
 
 ## 10. Never do THIS&hellip;
 

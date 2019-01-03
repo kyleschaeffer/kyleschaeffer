@@ -91,9 +91,9 @@ Basically, this script finds any `<input>` tags that have a `title` attribute (i
 
 Here is a demo of the code shown above:
 
-<input id="demo" type="text" title="Enter search keywords..." size="50" style="padding: 0.5em;" />
+<input id="demo" type="text" title="Enter search keywords..." size="50" />
 <style type="text/css">
-.input-prompt { position: absolute; font-style: italic; color: #aaa; margin: 0.3em 0 0 1em; }
+.input-prompt { position: absolute; font-style: italic; color: #aaa; margin: 0.5em 0 0 1em; }
 </style>
 <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=1.10.2'></script>
 <script type="text/javascript">

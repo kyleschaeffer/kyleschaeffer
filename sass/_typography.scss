@@ -3,16 +3,21 @@ body {
   background: $white;
   color: $darker;
   font-family: $font-body;
-  font-size: $s;
+  font-size: $s*.8;
   line-height: $h;
   margin: 0;
   padding: 0;
+
+  @include mq-up($screen-sm) {
+    font-size: $s;
+  }
 }
 
 // Links
 a {
-  color: $primary;
+  color: inherit;
   text-decoration: underline;
+  text-decoration-color: $primary;
   transition: color $t ease;
 
   &:hover,
@@ -43,14 +48,18 @@ h6 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.25em;
   font-family: $font-head;
   font-weight: $wx;
+
+  @include mq-up($screen-sm) {
+    font-size: 2em;
+  }
 }
 
 h2 {
   font-size: 1.5em;
-  font-weight: $wl;
+  font-weight: $wb;
 }
 
 h3 {
@@ -73,6 +82,10 @@ h6 {
 // Paragraphs
 p {
   margin: 0 0 $h;
+
+  &:empty {
+    display: none;
+  }
 }
 
 // Lists
@@ -96,10 +109,37 @@ ul {
   }
 }
 
+// Quotes
+blockquote {
+  border-left: 4px solid $primary;
+  color: $medium;
+  font-size: 1.1em;
+  font-style: italic;
+  margin: $h $h $h 0;
+  padding-left: $h;
+
+  @include mq-up($screen-md) {
+    margin: $hh $hh $hh 0;
+    padding-left: $hh;
+  }
+}
+
 // Rules
 hr {
   background: $lighter;
   border: 0;
   height: 1px;
-  margin: $hh 0;
+  margin: $h 0;
+
+  @include mq-up($screen-md) {
+    margin: $hh 0;
+  }
+}
+
+// Focus
+.focus {
+  @include mq-up($screen-lg + 120px) {
+    margin-left: -60px !important;
+    margin-right: -60px !important;
+  }
 }
