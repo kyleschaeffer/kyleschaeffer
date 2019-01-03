@@ -1,0 +1,27 @@
+.colophon {
+  font-size: .8em;
+
+  .menu {
+    display: flex;
+    float: left;
+
+    a {
+      display: block;
+
+      + a {
+        margin-left: 1.25em;
+      }
+    }
+  }
+
+  .copy {
+    color: $medium;
+    float: right;
+
+    &::after {
+      clear: both;
+      content: '';
+      display: block;
+    }
+  }
+}

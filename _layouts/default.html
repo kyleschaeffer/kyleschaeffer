@@ -15,12 +15,15 @@
   <main class="main" role="main">
     {{ content }}
   </main>
-  <footer role="contentinfo">
-    <nav role="navigation">
-      <a href="{{ site.baseurl }}{% link index.md %}">Home</a>
-      <a href="{{ site.baseurl }}{% link about.md %}">About</a>
-    </nav>
-    &copy; Kyle Schaeffer
+  <footer class="colophon" role="contentinfo">
+    <div class="container">
+      <hr>
+      <nav class="menu" role="navigation">
+        <a href="{{ site.baseurl }}{% link index.md %}">Home</a>
+        <a href="{{ site.baseurl }}{% link about.md %}">About</a>
+      </nav>
+      <p class="copy">&copy; Kyle Schaeffer</p>
+    </div>
   </footer>
   <script defer src="{{ site.baseurl }}{% link js/lights.js %}"></script>
 </body>
