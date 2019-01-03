@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=474
 permalink: /announcing-thepeev
+redirect_from:
+  - /uncategorized/announcing-thepeev
 categories:
   - Uncategorized
 tags:

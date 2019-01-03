@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=994
 permalink: /10-things-a-website-should-never-ever-do
+redirect_from:
+  - /user-experience/10-things-a-website-should-never-ever-do
 categories:
   - User Experience
 tags:

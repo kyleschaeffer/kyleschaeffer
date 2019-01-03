@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=176
 permalink: /retrospective
+redirect_from:
+  - /uncategorized/retrospective
 categories:
   - Uncategorized
 tags:

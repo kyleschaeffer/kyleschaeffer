@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=510
 permalink: /new-and-improved-thumbsticks-com
+redirect_from:
+  - /uncategorized/new-and-improved-thumbsticks-com
 categories:
   - Uncategorized
 tags:

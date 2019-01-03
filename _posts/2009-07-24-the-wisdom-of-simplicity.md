@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=237
 permalink: /the-wisdom-of-simplicity
+redirect_from:
+  - /user-experience/the-wisdom-of-simplicity
 categories:
   - User Experience
 tags:

@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=1646
 permalink: /sharepoint-ux-design-part-two-creative-design
+redirect_from:
+  - /sharepoint/sharepoint-ux-design-part-two-creative-design
 categories:
   - SharePoint
 tags:

@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=31
 permalink: /karate-corners-easy-rounded-corners-xhtml-no-script
+redirect_from:
+  - /development/karate-corners-easy-rounded-corners-xhtml-no-script
 categories:
   - Development
 tags:

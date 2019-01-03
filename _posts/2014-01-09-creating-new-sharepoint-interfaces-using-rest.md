@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=1452
 permalink: /creating-new-sharepoint-interfaces-using-rest
+redirect_from:
+  - /sharepoint/creating-new-sharepoint-interfaces-using-rest
 categories:
   - SharePoint
 ---

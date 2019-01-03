@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=400
 permalink: /did-you-notice
+redirect_from:
+  - /uncategorized/did-you-notice
 categories:
   - Uncategorized
 tags:

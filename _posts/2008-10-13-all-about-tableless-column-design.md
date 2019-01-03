@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=54
 permalink: /all-about-tableless-column-design
+redirect_from:
+  - /development/all-about-tableless-column-design
 categories:
   - Development
 tags:

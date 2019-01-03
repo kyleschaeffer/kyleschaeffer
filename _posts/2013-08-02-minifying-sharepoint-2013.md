@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=1336
 permalink: /minifying-sharepoint-2013
+redirect_from:
+  - /sharepoint/minifying-sharepoint-2013
 categories:
   - SharePoint
 tags:

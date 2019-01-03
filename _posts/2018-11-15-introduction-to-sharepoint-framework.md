@@ -7,6 +7,8 @@ excerpt: "I'm excited to announce a new online class I've been working on and re
 layout: post
 guid: https://kyleschaeffer.com/?p=1885
 permalink: /introduction-to-sharepoint-framework
+redirect_from:
+  - /sharepoint/introduction-to-sharepoint-framework
 categories:
   - SharePoint
 tags:

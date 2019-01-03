@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=178
 permalink: /css-in-print-media
+redirect_from:
+  - /development/css-in-print-media
 categories:
   - Development
 tags:

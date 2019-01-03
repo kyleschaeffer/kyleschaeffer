@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=1093
 permalink: /advanced-sharepoint-design-class
+redirect_from:
+  - /events/advanced-sharepoint-design-class
 categories:
   - Events
   - SharePoint

@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=1100
 permalink: /html5-css3-mobile-strategy
+redirect_from:
+  - /events/html5-css3-mobile-strategy
 categories:
   - Events
   - Mobile

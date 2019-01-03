@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=1621
 permalink: /old-river-creative
+redirect_from:
+  - /user-experience/old-river-creative
 categories:
   - User Experience
 tags:

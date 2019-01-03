@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=156
 permalink: /rounded-corners-in-mozilla-and-safari
+redirect_from:
+  - /development/rounded-corners-in-mozilla-and-safari
 categories:
   - Development
 tags:

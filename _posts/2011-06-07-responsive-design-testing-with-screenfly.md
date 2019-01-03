@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=933
 permalink: /responsive-design-testing-with-screenfly
+redirect_from:
+  - /Mobile/responsive-design-testing-with-screenfly
 categories:
   - Mobile
 tags:

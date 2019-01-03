@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=538
 permalink: /the-perfect-jquery-ajax-request
+redirect_from:
+  - /development/the-perfect-jquery-ajax-request
 categories:
   - Development
 tags:

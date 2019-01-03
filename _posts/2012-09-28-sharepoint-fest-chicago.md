@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=1135
 permalink: /sharepoint-fest-chicago
+redirect_from:
+  - /events/sharepoint-fest-chicago
 categories:
   - Events
   - Mobile

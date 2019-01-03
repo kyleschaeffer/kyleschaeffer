@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=296
 permalink: /reusable-transparent-css-rounded-corners
+redirect_from:
+  - /development/reusable-transparent-css-rounded-corners
 categories:
   - Development
 tags:

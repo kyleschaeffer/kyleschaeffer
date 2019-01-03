@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=142
 permalink: /pure-css-image-hover
+redirect_from:
+  - /development/pure-css-image-hover
 categories:
   - Development
   - User Experience

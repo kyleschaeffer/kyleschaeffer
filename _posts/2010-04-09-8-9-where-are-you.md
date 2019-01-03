@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=533
 permalink: /8-9-where-are-you
+redirect_from:
+  - /user-experience/8-9-where-are-you
 categories:
   - User Experience
 tags:

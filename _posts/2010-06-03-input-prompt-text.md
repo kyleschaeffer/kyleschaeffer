@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=565
 permalink: /input-prompt-text
+redirect_from:
+  - /development/input-prompt-text
 categories:
   - Development
   - User Experience

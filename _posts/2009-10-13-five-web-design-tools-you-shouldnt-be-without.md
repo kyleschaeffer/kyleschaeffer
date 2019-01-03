@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=333
 permalink: /five-web-design-tools-you-shouldnt-be-without
+redirect_from:
+  - /development/five-web-design-tools-you-shouldnt-be-without
 categories:
   - Development
 ---

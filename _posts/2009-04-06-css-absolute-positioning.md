@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=201
 permalink: /css-absolute-positioning
+redirect_from:
+  - /development/css-absolute-positioning
 categories:
   - Development
 tags:

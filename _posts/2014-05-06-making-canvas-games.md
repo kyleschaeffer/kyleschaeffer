@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=1555
 permalink: /making-canvas-games
+redirect_from:
+  - /development/making-canvas-games
 categories:
   - Development
 tags:

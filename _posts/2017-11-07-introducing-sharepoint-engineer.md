@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=1852
 permalink: /introducing-sharepoint-engineer
+redirect_from:
+  - /uncategorized/introducing-sharepoint-engineer
 categories:
   - Uncategorized
 ---

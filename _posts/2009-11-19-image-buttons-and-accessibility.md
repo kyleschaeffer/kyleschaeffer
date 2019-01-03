@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=358
 permalink: /image-buttons-and-accessibility
+redirect_from:
+  - /user-experience/image-buttons-and-accessibility
 categories:
   - User Experience
 tags:

@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=759
 permalink: /sharepoint-2010-css-reset
+redirect_from:
+  - /sharepoint/sharepoint-2010-css-reset
 categories:
   - SharePoint
 ---

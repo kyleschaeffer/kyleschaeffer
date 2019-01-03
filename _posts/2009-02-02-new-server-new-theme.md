@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=169
 permalink: /new-server-new-theme
+redirect_from:
+  - /uncategorized/new-server-new-theme
 categories:
   - Uncategorized
 tags:

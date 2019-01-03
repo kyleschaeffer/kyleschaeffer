@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=1319
 permalink: /wires-by-quirktools
+redirect_from:
+  - /user-experience/wires-by-quirktools
 categories:
   - User Experience
 tags:

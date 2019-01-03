@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=898
 permalink: /responsive-layouts-using-css-media-queries
+redirect_from:
+  - /development/responsive-layouts-using-css-media-queries
 categories:
   - Development
   - Mobile

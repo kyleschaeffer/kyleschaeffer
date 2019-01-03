@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=239
 permalink: /an-event-apart-boston
+redirect_from:
+  - /events/an-event-apart-boston
 categories:
   - Events
 tags:

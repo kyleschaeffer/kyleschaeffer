@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=1423
 permalink: /content-strength
+redirect_from:
+  - /user-experience/content-strength
 categories:
   - User Experience
 tags:

@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=1067
 permalink: /v5-responsive-html5-master-page
+redirect_from:
+  - /Mobile/v5-responsive-html5-master-page
 categories:
   - Mobile
   - SharePoint

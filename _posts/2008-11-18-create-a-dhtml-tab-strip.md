@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: http://www.kyleschaeffer.com/?p=107
 permalink: /create-a-dhtml-tab-strip
+redirect_from:
+  - /development/create-a-dhtml-tab-strip
 categories:
   - Development
 tags:

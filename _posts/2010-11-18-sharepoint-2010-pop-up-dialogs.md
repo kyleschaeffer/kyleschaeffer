@@ -6,6 +6,8 @@ author: Kyle
 layout: post
 guid: https://kyleschaeffer.com/?p=671
 permalink: /sharepoint-2010-pop-up-dialogs
+redirect_from:
+  - /sharepoint/sharepoint-2010-pop-up-dialogs
 categories:
   - SharePoint
 tags:
