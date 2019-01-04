@@ -6,6 +6,8 @@ author: Kyle
 layout: page
 guid: http://www.kyleschaeffer.com/?page_id=6
 permalink: /about
+redirect_from:
+  - /about-me/
 ---
 ![Kyle Schaeffer](/assets/img/Kyle-Beard-Headshot.jpg){:.img-right.img-thumb}I build apps and occasionally grow a beard. I like music, good books, and spending time in the great outdoors with my family.
 
