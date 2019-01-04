@@ -7,6 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=18
 permalink: /css-font-size-em-vs-px-vs-pt-vs-percent
 redirect_from:
+  - /development/css-font-size-em-vs-px-vs-pt-vs
   - /development/css-font-size-em-vs-px-vs-pt-vs-percent
 categories:
   - Development
