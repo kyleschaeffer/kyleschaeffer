@@ -7,7 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=101
 permalink: /five-elegant-rounded-corner-boxes
 redirect_from:
-  - /development/five-elegant-rounded-corner-boxes
+  - /development/five-elegant-rounded-corner-boxes/
 categories:
   - Development
 tags:

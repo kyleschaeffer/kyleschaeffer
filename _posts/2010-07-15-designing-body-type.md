@@ -7,7 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=612
 permalink: /designing-body-type
 redirect_from:
-  - /user-experience/designing-body-type
+  - /user-experience/designing-body-type/
 categories:
   - User Experience
 tags:

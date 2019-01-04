@@ -7,7 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=422
 permalink: /ie-corner-inserts-via-jquery
 redirect_from:
-  - /development/ie-corner-inserts-via-jquery
+  - /development/ie-corner-inserts-via-jquery/
 categories:
   - Development
 tags:

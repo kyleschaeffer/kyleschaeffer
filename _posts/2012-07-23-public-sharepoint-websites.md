@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=1122
 permalink: /public-sharepoint-websites
 redirect_from:
-  - /events/public-sharepoint-websites
+  - /events/public-sharepoint-websites/
 categories:
   - Events
   - SharePoint

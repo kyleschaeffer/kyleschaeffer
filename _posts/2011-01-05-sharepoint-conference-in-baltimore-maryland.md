@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=686
 permalink: /sharepoint-conference-in-baltimore-maryland
 redirect_from:
-  - /events/sharepoint-conference-in-baltimore-maryland
+  - /events/sharepoint-conference-in-baltimore-maryland/
 categories:
   - Events
   - SharePoint

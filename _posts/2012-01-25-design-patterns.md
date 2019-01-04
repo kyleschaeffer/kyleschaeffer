@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=1108
 permalink: /design-patterns
 redirect_from:
-  - /sharepoint/design-patterns
+  - /sharepoint/design-patterns/
 categories:
   - SharePoint
 tags:

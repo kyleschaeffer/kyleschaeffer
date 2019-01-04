@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=1462
 permalink: /creative-design-for-sharepoint
 redirect_from:
-  - /sharepoint/creative-design-for-sharepoint
+  - /sharepoint/creative-design-for-sharepoint/
 categories:
   - SharePoint
 ---

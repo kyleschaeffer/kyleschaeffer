@@ -7,7 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=293
 permalink: /a-very-simple-css-chat-bubble
 redirect_from:
-  - /development/a-very-simple-css-chat-bubble
+  - /development/a-very-simple-css-chat-bubble/
 categories:
   - Development
 tags:

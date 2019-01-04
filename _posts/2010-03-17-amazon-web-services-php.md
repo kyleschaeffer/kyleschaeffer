@@ -7,7 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=506
 permalink: /amazon-web-services-php
 redirect_from:
-  - /development/amazon-web-services-php
+  - /development/amazon-web-services-php/
 categories:
   - Development
 tags:

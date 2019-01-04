@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=680
 permalink: /constraint-aids-in-design
 redirect_from:
-  - /user-experience/constraint-aids-in-design
+  - /user-experience/constraint-aids-in-design/
 categories:
   - User Experience
 ---

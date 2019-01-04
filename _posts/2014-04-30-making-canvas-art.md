@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=1491
 permalink: /making-canvas-art
 redirect_from:
-  - /development/making-canvas-art
+  - /development/making-canvas-art/
 categories:
   - Development
 tags:

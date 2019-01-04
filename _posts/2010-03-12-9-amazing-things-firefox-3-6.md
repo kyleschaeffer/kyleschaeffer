@@ -7,7 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=480
 permalink: /9-amazing-things-firefox-3-6
 redirect_from:
-  - /development/9-amazing-things-firefox-3-6
+  - /development/9-amazing-things-firefox-3-6/
 categories:
   - Development
 tags:

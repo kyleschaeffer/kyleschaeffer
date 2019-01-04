@@ -7,7 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=488
 permalink: /lightbox-jquery-css
 redirect_from:
-  - /development/lightbox-jquery-css
+  - /development/lightbox-jquery-css/
 categories:
   - Development
 tags:

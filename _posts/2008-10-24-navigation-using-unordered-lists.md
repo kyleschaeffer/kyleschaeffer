@@ -7,7 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=74
 permalink: /navigation-using-unordered-lists
 redirect_from:
-  - /development/navigation-using-unordered-lists
+  - /development/navigation-using-unordered-lists/
 categories:
   - Development
 tags:

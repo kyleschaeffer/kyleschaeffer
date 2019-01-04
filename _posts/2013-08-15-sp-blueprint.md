@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=1355
 permalink: /sp-blueprint
 redirect_from:
-  - /sharepoint/sp-blueprint
+  - /sharepoint/sp-blueprint/
 categories:
   - SharePoint
 tags:

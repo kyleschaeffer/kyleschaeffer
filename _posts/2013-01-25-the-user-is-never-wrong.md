@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=1272
 permalink: /the-user-is-never-wrong
 redirect_from:
-  - /user-experience/the-user-is-never-wrong
+  - /user-experience/the-user-is-never-wrong/
 categories:
   - User Experience
 tags:

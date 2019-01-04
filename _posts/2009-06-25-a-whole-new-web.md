@@ -7,7 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=243
 permalink: /a-whole-new-web
 redirect_from:
-  - /user-experience/a-whole-new-web
+  - /user-experience/a-whole-new-web/
 categories:
   - User Experience
 tags:

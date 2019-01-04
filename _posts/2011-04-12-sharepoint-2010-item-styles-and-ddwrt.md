@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=816
 permalink: /sharepoint-2010-item-styles-and-ddwrt
 redirect_from:
-  - /sharepoint/sharepoint-2010-item-styles-and-ddwrt
+  - /sharepoint/sharepoint-2010-item-styles-and-ddwrt/
 categories:
   - SharePoint
 ---

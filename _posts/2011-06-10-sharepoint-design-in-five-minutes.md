@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=938
 permalink: /sharepoint-design-in-five-minutes
 redirect_from:
-  - /sharepoint/sharepoint-design-in-five-minutes
+  - /sharepoint/sharepoint-design-in-five-minutes/
 categories:
   - SharePoint
 tags:

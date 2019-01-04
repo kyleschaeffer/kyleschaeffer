@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=1324
 permalink: /sharepoint-2013-web-part-tool-pane
 redirect_from:
-  - /sharepoint/sharepoint-2013-web-part-tool-pane
+  - /sharepoint/sharepoint-2013-web-part-tool-pane/
 categories:
   - SharePoint
 tags:

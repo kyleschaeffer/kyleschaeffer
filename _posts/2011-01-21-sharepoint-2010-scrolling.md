@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=717
 permalink: /sharepoint-2010-scrolling
 redirect_from:
-  - /sharepoint/sharepoint-2010-scrolling
+  - /sharepoint/sharepoint-2010-scrolling/
 categories:
   - SharePoint
 ---

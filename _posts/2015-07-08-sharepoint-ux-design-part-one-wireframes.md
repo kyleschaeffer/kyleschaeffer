@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=1642
 permalink: /sharepoint-ux-design-part-one-wireframes
 redirect_from:
-  - /sharepoint/sharepoint-ux-design-part-one-wireframes
+  - /sharepoint/sharepoint-ux-design-part-one-wireframes/
 categories:
   - SharePoint
 tags:

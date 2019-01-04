@@ -7,7 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=512
 permalink: /a-refreshing-change-of-pace
 redirect_from:
-  - /events/a-refreshing-change-of-pace
+  - /events/a-refreshing-change-of-pace/
 categories:
   - Events
 tags:

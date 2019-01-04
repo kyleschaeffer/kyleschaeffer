@@ -7,7 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=348
 permalink: /simple-jquery-tabs-template
 redirect_from:
-  - /development/simple-jquery-tabs-template
+  - /development/simple-jquery-tabs-template/
 categories:
   - Development
 tags:

@@ -7,7 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=290
 permalink: /portfolio-additions
 redirect_from:
-  - /uncategorized/portfolio-additions
+  - /uncategorized/portfolio-additions/
 categories:
   - Uncategorized
 ---

@@ -7,7 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=257
 permalink: /announcing-thumbsticks-com
 redirect_from:
-  - /uncategorized/announcing-thumbsticks-com
+  - /uncategorized/announcing-thumbsticks-com/
 categories:
   - Uncategorized
 tags:

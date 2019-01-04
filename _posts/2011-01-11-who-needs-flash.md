@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=704
 permalink: /who-needs-flash
 redirect_from:
-  - /user-experience/who-needs-flash
+  - /user-experience/who-needs-flash/
 categories:
   - User Experience
 ---

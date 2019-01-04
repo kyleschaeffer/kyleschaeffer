@@ -7,7 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=104
 permalink: /the-shepherd
 redirect_from:
-  - /uncategorized/the-shepherd
+  - /uncategorized/the-shepherd/
 categories:
   - Uncategorized
 tags:

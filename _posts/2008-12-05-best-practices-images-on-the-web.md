@@ -7,7 +7,7 @@ layout: post
 guid: http://www.kyleschaeffer.com/?p=121
 permalink: /best-practices-images-on-the-web
 redirect_from:
-  - /development/best-practices-images-on-the-web
+  - /development/best-practices-images-on-the-web/
 categories:
   - Development
   - User Experience

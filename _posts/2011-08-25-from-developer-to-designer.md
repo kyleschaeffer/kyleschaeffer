@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=964
 permalink: /from-developer-to-designer
 redirect_from:
-  - /user-experience/from-developer-to-designer
+  - /user-experience/from-developer-to-designer/
 categories:
   - User Experience
 tags:

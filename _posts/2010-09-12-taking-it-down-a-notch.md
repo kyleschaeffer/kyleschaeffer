@@ -7,7 +7,7 @@ layout: post
 guid: https://kyleschaeffer.com/?p=638
 permalink: /taking-it-down-a-notch
 redirect_from:
-  - /user-experience/taking-it-down-a-notch
+  - /user-experience/taking-it-down-a-notch/
 categories:
   - User Experience
 tags:
