@@ -1,10 +1,11 @@
 title: Kyle Schaeffer
-description: Web Design and SharePoint Branding
+description: "Develop, design, interact, educate."
 email: kyle@spirito.us
 baseurl: ""
 url: "https://kyleschaeffer.com"
 twitter_username: kyleschaeffer
-github_username:  kyleschaeffer
+github_username: kyleschaeffer
+paginate: 10
 
 permalink: pretty
 markdown: kramdown
@@ -13,4 +14,5 @@ sass:
   style: compressed
 plugins:
   - jekyll-feed
+  - jekyll-paginate
   - jekyll-redirect-from

@@ -19,65 +19,62 @@
 #lights {
   height: 100%;
   left: 0;
-  margin: 0;
+  margin: auto;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 1;
 }
 
-.brand {
+#horizon {
+  bottom: 0;
+  display: block;
+  left: 50%;
+  margin-left: -160px;
+  pointer-events: none;
+  position: absolute;
+  width: 320px;
+  z-index: 2;
+
+  @include mq-up($screen-sm) {
+    margin-left: -250px;
+    width: 500px;
+  }
+
+  @include mq-up($screen-md) {
+    margin-left: -320px;
+    width: 640px;
+  }
+
+  @include mq-up($screen-lg) {
+    margin-left: -400px;
+    width: 800px;
+  }
+}
+
+#brand {
   bottom: 0;
   color: $white;
-  display: block;
-  font-family: $font-head;
-  font-size: 38px;
+  font-size: calc(100vw / 7.65);
   font-weight: $wx;
-  left: 50%;
-  letter-spacing: -.045em;
-  line-height: .75em;
-  margin-left: -4.1em;
+  left: 0;
+  letter-spacing: -.08em;
+  line-height: .755em;
+  margin: 0;
+  opacity: .075;
   overflow: hidden;
+  pointer-events: none;
   position: absolute;
   text-align: center;
   text-decoration: none;
+  text-indent: -.09em;
   text-transform: uppercase;
   white-space: nowrap;
-  width: 8.2em;
-  z-index: 2;
+  width: 100%;
+  z-index: 3;
 
   &:hover,
   &:focus {
     color: $white;
-  }
-
-  @include mq-up($screen-sm) {
-    font-size: 70px;
-  }
-
-  @include mq-up($screen-md) {
-    font-size: 95px;
-  }
-
-  @include mq-up($screen-lg) {
-    font-size: 140px;
-  }
-}
-
-.tagline {
-  color: $white;
-  display: block;
-  font-size: .8em;
-  font-weight: $wl;
-  left: 0;
-  line-height: $s;
-  position: absolute;
-  text-align: center;
-  top: 33%;
-  width: 100%;
-  z-index: 2;
-
-  @include mq-up($screen-sm) {
-    font-size: 1em;
   }
 }

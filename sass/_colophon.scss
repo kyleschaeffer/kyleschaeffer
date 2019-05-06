@@ -1,9 +1,13 @@
 .colophon {
-  font-size: .8em;
+  padding: $h;
+
+  hr {
+    margin-top: 0;
+  }
 
   .menu {
     display: flex;
-    float: left;
+    justify-content: center;
 
     a {
       display: block;
@@ -16,7 +20,8 @@
 
   .copy {
     color: $medium;
-    float: right;
+    margin: $h 0 0;
+    text-align: center;
 
     &::after {
       clear: both;

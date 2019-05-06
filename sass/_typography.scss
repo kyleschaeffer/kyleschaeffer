@@ -3,7 +3,7 @@ body {
   background: $white;
   color: $darker;
   font-family: $font-body;
-  font-size: $s*.8;
+  font-size: $s * .9;
   line-height: $h;
   margin: 0;
   padding: 0;
@@ -48,9 +48,9 @@ h6 {
 }
 
 h1 {
-  font-size: 1.25em;
   font-family: $font-head;
-  font-weight: $wx;
+  font-size: 1.25em;
+  font-weight: $wb;
 
   @include mq-up($screen-sm) {
     font-size: 2em;
