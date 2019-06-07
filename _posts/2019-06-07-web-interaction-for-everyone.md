@@ -4,15 +4,14 @@ date: 2019-06-07T12:00:00+00:00
 author: Kyle
 excerpt: "I'm excited to announce yet another new online training course that I’ve been working on over the past several months. In Web Interaction for Everyone, I teach the art of front-end development through building interactive web components like dropdown menus, tabs, accordions, sliders, and more."
 layout: post
-guid: https://kyleschaeffer.com/?p=1885
-permalink: /introduction-to-sharepoint-framework
-redirect_from:
-  - /sharepoint/introduction-to-sharepoint-framework/
+permalink: /web-interaction-for-everyone
 categories:
-  - SharePoint
+  - Development
+  - Training
 tags:
-  - SharePoint
-  - Video
+  - CSS
+  - HTML
+  - JavaScript
 ---
 I'm excited to announce yet another new online training course that I’ve been working on over the past several months. In [Web Interaction for Everyone](https://webinteract.io/), I teach the art of front-end development. I truly believe that the best teacher is experience. As such, in the course we demonstrate building interactive web components like dropdown menus, tabs, accordions, sliders, and more. I had a lot of fun creating and recording the course, and I’m really happy with the way it turned out.
 
