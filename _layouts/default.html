@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} / Kyle Schaeffer</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}{% link sass/blog.scss %}">
+  <link rel="stylesheet" href="{% link sass/blog.scss %}">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5789165-1"></script>
   <script>
   window.dataLayer = window.dataLayer || [];
@@ -15,9 +15,15 @@
 </head>
 <body>
   <header class="banner" role="banner">
-    <canvas id="lights" width="400" height="100"></canvas>
-    <img id="horizon" src="{{ site.baseurl }}{% link assets/img/horizon.svg %}" alt="Horizon illustration">
     <h2 id="brand">Kyle Schaeffer</h2>
+    <nav class="menu" role="navigation">
+      {% assign current = page.url | downcase | split: '/' %}
+      <a href="{% link index.html %}"{% if current[1] != 'courses' and current[1] != 'about' %} class="current"{% endif %}>Blog</a>
+      <a href="{% link courses.md %}"{% if current[1] == 'courses' %} class="current"{% endif %}>Courses</a>
+      <a href="{% link about.md %}"{% if current[1] == 'about' %} class="current"{% endif %}>About</a>
+    </nav>
+    <canvas id="lights" width="400" height="100"></canvas>
+    <img id="horizon" src="{% link assets/img/horizon.svg %}" alt="Horizon illustration">
   </header>
   <main class="main" role="main">
     {{ content }}
@@ -25,13 +31,10 @@
   <footer class="colophon" role="contentinfo">
     <div class="container">
       <hr>
-      <nav class="menu" role="navigation">
-        <a href="{{ site.baseurl }}{% link index.md %}">Home</a>
-        <a href="{{ site.baseurl }}{% link about.md %}">About</a>
-      </nav>
-      <p class="copy">&copy; Kyle Schaeffer</p>
+      <p>&copy; Kyle Schaeffer <a href="https://twitter.com/kyleschaeffer?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-dnt="true" data-show-count="false">Follow @kyleschaeffer</a></p>
     </div>
   </footer>
-  <script defer src="{{ site.baseurl }}{% link js/lights.js %}"></script>
+  <script defer src="{% link js/lights.js %}"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>

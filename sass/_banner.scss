@@ -78,3 +78,65 @@
     color: $white;
   }
 }
+
+// Menu
+.menu {
+  display: flex;
+  justify-content: center;
+  left: 0;
+  line-height: $hc;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  z-index: 3;
+
+  a {
+    color: transparentize($white, .25);
+    display: block;
+    font-size: 1.125em;
+    font-weight: 300;
+    letter-spacing: .05em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color $t ease;
+
+    &:hover,
+    &:focus {
+      color: transparentize($white, .05);
+    }
+
+    + a {
+      margin-left: 1.25em;
+    }
+
+    &.current {
+      &::after {
+        background: transparentize($white, .75);
+        bottom: -.35em;
+        content: '';
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+
+  @include mq-up($screen-sm) {
+    top: 15px;
+
+    a {
+      font-size: 1.25em;
+    }
+  }
+
+  @include mq-up($screen-md) {
+    top: 20px;
+  }
+
+  @include mq-up($screen-lg) {
+    top: 30px;
+  }
+}

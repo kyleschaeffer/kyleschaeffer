@@ -6,6 +6,7 @@ url: "https://kyleschaeffer.com"
 twitter_username: kyleschaeffer
 github_username: kyleschaeffer
 paginate: 10
+paginate_path: "/:num/"
 
 permalink: pretty
 markdown: kramdown

@@ -4,9 +4,13 @@ layout: page
 
 <article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <p class="post-meta">Posted by {{ page.author }} on <time datetime="{{ page.date }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+  <p class="post-meta">Posted by <strong>{{ page.author }}</strong> on <time datetime="{{ page.date }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
 
   <hr>
 
   {{ content }}
+
+  <p class="share">
+    <a href="https://twitter.com/intent/tweet" class="twitter-share-button" data-text="{{ page.title }}" data-url="https://{{ site.host }}{{ page.url }}" data-via="kyleschaeffer" data-related="kyleschaeffer" data-dnt="true">Tweet</a>
+  </p>
 </article>

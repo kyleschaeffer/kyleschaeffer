@@ -9,5 +9,49 @@
 
 .post-meta {
   color: $medium;
+  font-size: .875em;
+  letter-spacing: .05em;
   text-align: center;
+  text-transform: uppercase;
+
+  strong {
+    color: $dark;
+  }
+}
+
+.post-dateline {
+  color: $medium;
+  font-size: .875em;
+  letter-spacing: .05em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+// Excerpts
+.post-excerpt {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+// Pagination
+.pagination {
+  text-align: center;
+
+  a {
+    color: $medium;
+    font-size: .875em;
+    letter-spacing: .05em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: $primary;
+    }
+
+    + a {
+      margin-left: 1.25em;
+    }
+  }
 }
