@@ -15,4 +15,4 @@ I have been designing and building software for nearly two decades. I find this 
 
 It’s an exciting field to work in. While I will always have fantastical dreams of becoming a novelist or musician (don’t we all?), the reality of the interim has proved to suit me just fine. App design and development has found a comfortable place in my professional life, and I dare say that I even enjoy it.
 
-In 2014, my wife and I started a company called [Spiritous](https://spirito.us/). Looking for someone to design and build your next digital project? [Get in touch.](https://spirito.us/contact)
+I’m a senior front-end engineer at [Facet](https://facet.ai/), and I [teach a few classes](/courses) in my spare time.
